@@ -31,6 +31,7 @@ Repository for the yearly CTF challenge by UiT students
 5. Push branch `git push --set-upstream origin issueName`
 6. Create a pull request to merge, and another member is required to overlook the code to merge it to master
 7. Update issue/task status in project
+8. Add README for task
 
 # Resrouces
 ## Previous UiTHacks
