@@ -31,3 +31,11 @@ Repository for the yearly CTF challenge by UiT students
 5. Push branch `git push --set-upstream origin issueName`
 6. Create a pull request to merge, and another member is required to overlook the code to merge it to master
 7. Update issue/task status in project
+
+# Resrouces
+## Previous UiTHacks
+[UiTHack22 - Star Wars](https://github.com/td-org-uit-no/UiTHack22)
+
+[UiTHack20 - Halloween](https://github.com/td-org-uit-no/UiTHack20)
+
+[UiTHack19 - ??](https://github.com/td-org-uit-no/UiTHack20)
