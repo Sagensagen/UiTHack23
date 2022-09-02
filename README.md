@@ -11,7 +11,6 @@ Repository for the yearly CTF challenge by UiT students
 
 # Status 
 ## Challenges
-Share any ideas in the comments, or just insert them  directly into the table below.
 :heavy_check_mark: is complete challenges
 :heavy_multiplication_x: is incomplete
 :question: is proposal
