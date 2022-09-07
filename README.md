@@ -26,12 +26,13 @@ Repository for the yearly CTF challenge by UiT students
 # Developer guidelines
 1. Create a new issue for a task
 2. Add the issue to the project structure [here](https://github.com/users/Sagensagen/projects/1/views/2)  and assign it to your self.
-3. Create a new branch for the specific task/issue `git checkout -b issueName` from master. (*Remeber du pull/fetch)
-4. When task created commit it `git add *` `git commit -m "Insert description and alot of emojies like this :rocket: :fire:"`
-5. Push branch `git push --set-upstream origin issueName`
-6. Create a pull request to merge, and another member is required to overlook the code to merge it to master
-7. Update issue/task status in project
-8. Add README for task
+3. Pull/fetch from master.
+4. Create a new branch for the specific task/issue `git checkout -b issueName` from master. (*Remeber du pull/fetch)
+5. When task created commit it `git add *` `git commit -m "Insert description and alot of emojies like this :rocket: :fire:"`
+6. Push branch `git push --set-upstream origin issueName`
+7. Create a pull request to merge, and another member is required to overlook the code to merge it to master
+8. Update issue/task status in project
+9. Add README for task
 
 # Resrouces
 ## Previous UiTHacks
