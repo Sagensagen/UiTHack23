@@ -12,8 +12,6 @@ Repository for the yearly CTF challenge by UiT students
 # Status 
 ## Challenges
 :heavy_check_mark: is complete challenges
-:heavy_multiplication_x: is incomplete
-:question: is proposal
 | Noob      | Web | Pwn      |  Misc | Rev_Eng  | Crypto|
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 |Noob1:cat flag.txt :heavy_multiplication_x: | | | | | |
