@@ -24,7 +24,7 @@ Repository for the yearly CTF challenge by UiT students
 
 
 # Developer guidelines
-1. Create a new issue for a task
+1. Create a new issue for a task. Use tags to indicate category and difficulty(**points)
 2. Add the issue to the project structure [here](https://github.com/users/Sagensagen/projects/1/views/2)  and assign it to your self.
 3. Pull/fetch from master.
 4. Create a new branch for the specific task/issue `git checkout -b issueName` from master. (*Remeber du pull/fetch)
