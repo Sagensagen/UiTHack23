@@ -21,5 +21,5 @@
 Connect to the server via SSH and cat/vi/nano **flag.txt**
 
 ```
-UiTHack22{pull_the_lever_Kronk}
+UiTHack23{pull_the_lever_Kronk}
 ```
