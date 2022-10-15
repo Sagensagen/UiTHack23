@@ -9,7 +9,7 @@ Welcome to the past! By entering this rabbit hole you can not go back and will b
 To enter the trial you will need to connect through `ssh`.  
 The username for this first trial, is `noob1`.  
 The server name is `wwww.limewire.td.org.uit.no`.  
-The password for youngling is `noob1`.
+The password for noob1 is `noob1`.
 
 Tips:
 `ssh noob1@wwww.limewire.td.org.uit.no`

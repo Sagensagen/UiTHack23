@@ -1,25 +1,29 @@
-># Noob1 - Forward To The Past
->>    Noob1 - 50pts
+># Noob2 - Forward To The Past
+>>    Noob2 - 100pts
 >
->Welcome to the past! By entering this rabbit hole you can not go back and will be struck with varous flashbacks that will blast you to the past!
+>Reading this means you have succeded to initiate this journey to the blast. Or was it past? Idk.
 >
-> Only the right flag will grant you the title Padawan. The flag will be the same format as this one: 
->```UiTHack23{this_could_be_a_key}```.
+>Either way, the environment you have been placed within Edtropolis, the hometown of Ed, Edd and Eddy. 
 >
->To enter the trial you will need to connect through `ssh`.  
->The username for this first trial, is `noob1`.  
+>These goofy dudes knows the way out of Edtropolis, but will not help you until you have helped them..
+>
+>Help the Ed's navigate to find what they treasure the most, JAWBREAKERS! And you shall be sent further on to escape this horrendus town of Eds.
+>
+>![test](https://media.giphy.com/media/12bf1xyaw7a59u/giphy.gif)
+>
+>
+>The username for this , is `noob2`.  
 >The server name is `wwww.limewire.td.org.uit.no`.  
->The password for youngling is `noob1`.
+>The password for noob2 is the last flag retrieved from noob1.
 >
 >Tips:
->`ssh noob1@wwww.limewire.td.org.uit.no`
->
->Tips:
->Read up on your unix commands 
+>`ssh noob2@wwww.limewire.td.org.uit.no`
+
+
 
 ## Writeup
-Connect to the server via SSH and cat/vi/nano **flag.txt**
+Connect to the server via SSH and navigate to Edtropolis/JAWBREAKER
 
 ```
-UiTHack22{pull_the_lever_Kronk}
+UiTHack22{We'll buy a truck-load of jawbreakers!}
 ```
