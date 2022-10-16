@@ -1,6 +1,4 @@
 
-import imageio.v2 as imageio
-from   matplotlib import pyplot as plt
 import numpy as np
 from   PIL import Image, ImageSequence, ImageDraw, ImageFont
 
@@ -15,10 +13,11 @@ INTENSITY = 255
 FONTPATH  = "/usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf"
 FONTSIZE  = 10
 
-def insertFlag(img:Image.Image) -> "list[Image.Image]":
+def gifInsertFlag(imagefile:str, outfile:str, modify:callable=lambda:None) -> None:
 	""" Load .gif-file, insert flag in frames, and save. """
+	img = Image.open(imagefile)
 
-	flagframes = [ frame for frame in ImageSequence.all_frames(img) ]
+	flagframes = [ frame for frame in ImageSequence.all_frames(img, func=modify) ]
 	startframe = img.n_frames - len(UiTHack23)
 	
 	for i in range(startframe, len(flagframes)):
@@ -30,15 +29,18 @@ def insertFlag(img:Image.Image) -> "list[Image.Image]":
 
 		flagframes[i] = np.asarray(flagframes[i]).astype(np.uint8)
 		flagframes[i][x:x+w,y:y+h] = flag
-		# plt.imshow(flagframes[i])
-		# plt.show()
 		flagframes[i] = Image.fromarray(flagframes[i])
 
-	return flagframes
+	flagframes[0].save(
+		outfile,
+		format = "gif",
+		save_all = True,
+		append_images = flagframes[1:],
+		**img.info,
+	)
 
 def textPixel(text:str, mode:str="RGB") -> np.ndarray:
 	""" Return array image depiction of argument text. """
-
 	font = ImageFont.truetype(FONTPATH, FONTSIZE)
 	w,h  = font.getsize(text)
 
@@ -50,17 +52,6 @@ def textPixel(text:str, mode:str="RGB") -> np.ndarray:
 	return np.asarray(img, dtype = np.uint8)
 
 if __name__ == "__main__":
-	imagefile   = f"image.gif"
-	outputimage = f"image-flag.gif"
-
-	img = Image.open(imagefile)
-	flags = insertFlag(img)
-	
-	flags[0].save(
-		outputimage,
-		format = "gif",
-		save_all = True,
-		append_images = flags[1:],
-		**img.info,
-	)
-
+	imagefile = f"image.gif"
+	outfile   = f"image-flag.gif"
+	gifInsertFlag(imagefile, outfile)
