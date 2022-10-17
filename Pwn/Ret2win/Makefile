@@ -1,5 +1,5 @@
-test:
-	gcc -no-pie -fno-stack-protector buffer_overflow.c -o overflow 
+mp3_player:
+	gcc -no-pie -fno-stack-protector buffer_overflow.c -o mp3_player
 
-clean: 
-	rm overflow
+clean:
+	rm mp3_player
