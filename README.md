@@ -17,7 +17,7 @@ Repository for the yearly CTF challenge by UiT students
 |Noob1:cat flag.txt :heavy_multiplication_x: | | | | | |
 |Noob2 | | | | | |
 |Noob3 | | | | | |
-|Noob4 | | | | | |
+|Noob4 |ARP poisoning| | | | |
 |Noob5 | | | | | |
 
 
