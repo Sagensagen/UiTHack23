@@ -1,23 +1,21 @@
-># Noob2 - Forward To The Past
->>    Noob2 - 100pts
+># Noob1 - Forward To The Past
+>>    Noob1 - 50pts
 >
->Reading this means you have succeded to initiate this journey to the blast. Or was it past? Idk.
+>Welcome to the past! By entering this rabbit hole you can not go back and will be struck with varous flashbacks that will blast you to the past!
 >
->Either way, the environment you have been placed within Edtropolis, the hometown of Ed, Edd and Eddy. 
+>The flag will be the same format as this one: 
+>```UiTHack23{this_could_be_a_key}```.
 >
->These goofy dudes knows the way out of Edtropolis, but will not help you until you have helped them..
->
->Help the Ed's navigate to find what they treasure the most, JAWBREAKERS! And you shall be sent further on to escape this horrendus town of Eds.
->
->![test](https://media.giphy.com/media/12bf1xyaw7a59u/giphy.gif)
->
->
->The username for this , is `noob2`.  
+>To enter you will need to connect through `ssh`.  
+>The username is `noob1`.  
 >The server name is `wwww.limewire.td.org.uit.no`.  
->The password for noob2 is the last flag retrieved from noob1.
+>The password for youngling is `noob1`.
 >
 >Tips:
->`ssh noob2@wwww.limewire.td.org.uit.no`
+>`ssh noob1@wwww.limewire.td.org.uit.no`
+>
+>Tips:
+>Read up on your unix commands 
 
 
 
