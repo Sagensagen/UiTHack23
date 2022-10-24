@@ -12,7 +12,7 @@
 >`ssh noob3@wwww.limewire.td.org.uit.no`
 
 ## Writeup
-scp the executable from the server to local machine with executables permission.
+Connect to the server, scp the file onto a machine with executable permissions and double unzip to either run executable or read the file.
 
 ```
 UiTHack23{RiseAndShineMrFreeman}
