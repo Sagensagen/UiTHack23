@@ -15,8 +15,8 @@ Repository for the yearly CTF challenge by UiT students
 | Noob      | Web | Pwn      |  Misc | Rev_Eng  | Crypto|
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 |Noob1:cat flag.txt :heavy_multiplication_x: | | | | | |
-|Noob2 | | | | | |
-|Noob3 | | | | | |
+|Noob2:Navigate| | | | | |
+|Noob3:scp+unzip*2| | | | | |
 |Noob4 |ARP poisoning| | | | |
 |Noob5 | | | | | |
 
