@@ -3,13 +3,13 @@
 
 Welcome to the past! By entering this rabbit hole you can not go back and will be struck with varous flashbacks that will blast you to the past!
 
- Only the right flag will grant you the title Padawan. The flag will be the same format as this one: 
+The flag will be the same format as this one: 
 ```UiTHack23{this_could_be_a_key}```.
 
-To enter the trial you will need to connect through `ssh`.  
-The username for this first trial, is `noob1`.  
+To enter you will need to connect through `ssh`.  
+The username is `noob1`.  
 The server name is `wwww.limewire.td.org.uit.no`.  
-The password for noob1 is `noob1`.
+The password for youngling is `noob1`.
 
 Tips:
 `ssh noob1@wwww.limewire.td.org.uit.no`
