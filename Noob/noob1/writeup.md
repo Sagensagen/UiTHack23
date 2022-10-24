@@ -25,5 +25,4 @@
 Connect to the server via SSH and navigate to Edtropolis/JAWBREAKER
 
 ```
-UiTHack22{We'll buy a truck-load of jawbreakers!}
-```
+
