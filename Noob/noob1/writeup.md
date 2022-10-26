@@ -20,7 +20,7 @@
 
 
 ## Writeup
-Connect to the server via SSH and navigate to Edtropolis/JAWBREAKER
+Connect to the server cat/vim/nano flag.txt
 
 ```UiTHack23{pull_the_lever_kronk}```
 
