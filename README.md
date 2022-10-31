@@ -17,8 +17,8 @@ Repository for the yearly CTF challenge by UiT students
 |cat flag 🐈‍⬛ | | | | | |
 |Navigate 🧭| | | | | |
 |scp+unzip*2 🤐| | | | | |
-|Moms spaghetti 🍝|ARP poisoning| | | | |
-| ❓ | | | | | |
+|Moms spaghetti 🍝|ARP poisoning test_tube 	:test_tube:| | | | |
+|Get served :shipit:| | | | | |
 
 
 # Developer guidelines
