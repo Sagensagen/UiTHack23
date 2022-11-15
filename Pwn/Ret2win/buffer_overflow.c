@@ -1,11 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
 void ignore_me(){
   setvbuf(stdin, NULL, _IONBF, 0);
   setvbuf(stdout, NULL, _IONBF, 0);
   setvbuf(stderr, NULL, _IONBF, 0);
+}
+
+void menu(){
+  puts("Welcome to my online MP3 Player!\n");
+  puts("Please choose the name of the song you want to play:\n");
+  puts("- Photograph - Nickelback\n- Lose Yourself - Eminem\n- Mamma Mia - ABBA");
 }
 
 void photograph(){
@@ -41,14 +46,7 @@ void call_me_maybe(){
   fclose(f);
 }
 
-int main(){
-  ignore_me();
-  char song[30];
-  puts("Welcome to UiT's MP3 Player!\n");
-  puts("Please choose the name of the song you want to play:\n");
-  puts("1. Photograph - Nickelback\n2. Lose Yourself - Eminem\n3. Mamma Mia - ABBA");
-  gets(song);
-
+void play_song(char *song){
   if(!strcmp(song, "Photograph")){
     photograph();
   }
@@ -61,5 +59,14 @@ int main(){
   else {
     puts("Could not play the requested song");
   }
+}
+
+int main(){
+  ignore_me();
+  char song[30];
+
+  menu();
+  gets(song);
+  play_song(song);
   return 0;
 }

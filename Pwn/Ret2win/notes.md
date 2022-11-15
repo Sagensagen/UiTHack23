@@ -1,9 +1,10 @@
-## In Progress: Current idea of the task and its solution
+## Potential Task
 
-## Running the program over a port
+## Running the program remote for quick-testing
 `socat TCP-LISTEN:9001,reuseaddr,fork EXEC:"./mp3_player",stderr`
 
 ## Missing
-- Create writeup.md
-- Create README for task
+- Task name
+- writeup.md
+- README
 - Dockerfile
