@@ -17,4 +17,4 @@ Hint 2. Ever heard of a buffer overflow?
 
 Files: [Source code](src)
 
-[Writeup](writeup)
+[Writeup](writeup.md)
