@@ -37,10 +37,14 @@ void mamma_mia(){
 }
 
 void call_me_maybe(){
-  char *flag = getenv("MP3_FLAG");
-  if(flag != NULL){
-    printf("%s\n", flag);
+  char chr;
+  FILE *f = fopen("flag.txt", "r");
+  chr = fgetc(f);
+  while(chr != EOF){
+    printf("%c", chr);
+    chr = fgetc(f);
   }
+  fclose(f);
 }
 
 void play_song(char *song){
