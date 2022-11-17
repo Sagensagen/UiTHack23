@@ -11,7 +11,7 @@ You can connect to the mp3 player with
 $ nc wwww.limewire.td.org.uit.no 6100
 ```
 
-Hint 1. Maybe there is a way to call to function printing the flag
+Hint 1. Maybe there is a way to call the function printing the flag
 
 Hint 2. Ever heard of a buffer overflow?
 

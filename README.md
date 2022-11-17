@@ -9,12 +9,12 @@ Repository for the yearly CTF challenge by UiT students
 
 
 
-# Status 
+# Status
 ## Challenges
 :heavy_check_mark: is complete challenges
 | Noob      | Web | Pwn      |  Misc | Rev_Eng  | Crypto|
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-|Noob1:cat flag.txt :heavy_multiplication_x: | | | | | |
+|Noob1:cat flag.txt :heavy_multiplication_x: | |Mp3 Player :heavy_check_mark: | | | |
 |Noob2 | | | | | |
 |Noob3 | | | | | |
 |Noob4 | | | | | |
