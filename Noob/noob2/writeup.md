@@ -21,7 +21,7 @@
 
 ## Writeup
 
-Connect through ssh
+Connect through ssh and navigate to edtropolis/JAWBREAKERS
 
 ```
 UiTHack23{We'll buy a truck-load of jawbreakers!}
