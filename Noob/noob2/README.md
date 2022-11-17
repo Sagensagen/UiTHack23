@@ -1,4 +1,4 @@
-# Noob2 - Forward To The Past
+# Noob2 - Ed?
 >    Noob2 - 100pts
 
 Reading this means you have succeded to initiate this journey to the blast. Or was it past? Idk.

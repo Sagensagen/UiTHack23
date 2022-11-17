@@ -20,7 +20,6 @@
 > `ssh noob2@wwww.limewire.td.org.uit.no`
 
 ## Writeup
-
 Connect through ssh and navigate to edtropolis/JAWBREAKERS
 
 ```

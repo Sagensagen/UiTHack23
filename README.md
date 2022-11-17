@@ -14,11 +14,11 @@ Repository for the yearly CTF challenge by UiT students
 :heavy_check_mark: is complete challenges
 | Noob      | Web | Pwn      |  Misc | Rev_Eng  | Crypto|
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-|Noob1:cat flag.txt :heavy_multiplication_x: | | | | | |
-|Noob2 | | | | | |
-|Noob3 | | | | | |
-|Noob4 |ARP poisoning| | | | |
-|Noob5 | | | | | |
+|cat flag 🐈‍⬛ | | | | | |
+|Navigate 🧭| | | | | |
+|scp+unzip*2 🤐| | | | | |
+|Moms spaghetti 🍝|ARP poisoning test_tube 	:test_tube:| | | | |
+|Get served :shipit:| | | | | |
 
 
 # Developer guidelines
