@@ -9,12 +9,12 @@ Repository for the yearly CTF challenge by UiT students
 
 
 
-# Status 
+# Status
 ## Challenges
 :heavy_check_mark: is complete challenges
 | Noob      | Web | Pwn      |  Misc | Rev_Eng  | Crypto|
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-|cat flag 🐈‍⬛ | | | | | |
+|cat flag 🐈‍⬛ | |Mp3 Player :heavy_check_mark: | | | |
 |Navigate 🧭| | | | | |
 |scp+unzip*2 🤐| | | | | |
 |Moms spaghetti 🍝|ARP poisoning test_tube 	:test_tube:| | | | |
