@@ -11,14 +11,14 @@ Repository for the yearly CTF challenge by UiT students
 
 # Status
 ## Challenges
-:heavy_check_mark: is complete challenges
-| Noob      | Web | Pwn      |  Misc | Rev_Eng  | Crypto|
-| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-|cat flag 🐈‍⬛ | |Mp3 Player :heavy_check_mark: | | | |
-|Navigate 🧭| | | | | |
-|scp+unzip*2 🤐| | | | | |
-|Moms spaghetti 🍝|ARP poisoning test_tube 	:test_tube:| | | | |
-|Get served :shipit:| | | | | |
+Add emoji!
+| Noob      | Web | Pwn      |  Misc | Rev_Eng  | Crypto| IRL |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+|cat flag 🐈‍⬛ | |Mp3 Player :heavy_check_mark: | | | | ARP poisoning 	:test_tube: |
+|Navigate 🧭| | | | | | |
+|scp+unzip*2 🤐| | | | | | |
+|Moms spaghetti 🍝|| | | | | |
+|Get served :shipit:| | | | | | |
 
 
 # Developer guidelines
