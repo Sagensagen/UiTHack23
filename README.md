@@ -38,4 +38,4 @@ Add emoji!
 
 [UiTHack20 - Halloween](https://github.com/td-org-uit-no/UiTHack20)
 
-[UiTHack19 - ??](https://github.com/td-org-uit-no/UiTHack20)
+[UiTHack19 - ??](https://github.com/td-org-uit-no/UiTHack19)
