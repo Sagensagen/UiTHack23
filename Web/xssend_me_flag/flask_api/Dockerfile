@@ -13,4 +13,9 @@ EXPOSE 5000
 ENV FLASK_APP=api.py
 
 
-CMD ["flask", "run", "--host", "0.0.0.0"]
+
+ENTRYPOINT ["python"]
+CMD ["api.py"]
+
+
+# CMD ["flask", "run", "--host", "0.0.0.0"]

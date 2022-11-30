@@ -1,2 +1,0 @@
-*/1 * * * * /script.sh
-*/1 * * * * echo hello world

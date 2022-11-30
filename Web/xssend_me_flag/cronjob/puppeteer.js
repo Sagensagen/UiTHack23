@@ -8,5 +8,5 @@ const puppeteer = require("puppeteer");
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
   const page = await browser.newPage();
-  await page.goto("127.0.0.1:5000/admin");
+  await page.goto("http://192.168.39.169:5000");
 })();
