@@ -1,4 +1,4 @@
-fetch("http://localhost:5000/")
+fetch("http://motherload.td.org.uit.no:5000/db")
   .then((response) => {
     return response.json();
   })

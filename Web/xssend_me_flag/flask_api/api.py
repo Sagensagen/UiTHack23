@@ -24,7 +24,7 @@ def getComplaints():
     return resp
 
 
-@app.route('/', methods=['GET'])
+@app.route('/db', methods=['GET'])
 def postComplaints():
     ip = request.remote_addr
     # if (ip != '127.0.0.1'):
