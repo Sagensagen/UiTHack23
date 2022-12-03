@@ -1,4 +1,45 @@
-<h1>Home Page</h1>
-<div>
-  <a href="/flag">View Flag</a>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Login</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="https://unpkg.com/98.css@0.1.4/build/98.css" />
+
+  </head>
+
+  <body style="background-color: #008b8b;">
+    <div class="window" style="margin: 0 auto; width: 250px; position: relative; top: 100px; transform: scale(1.2)">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          Log in as admin to view the flag
+        </div>
+
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <form action="/flag" method="post">
+          <div class="field-row-stacked" style="width: 200px">
+            <label for="text22">Username</label>
+            <input id="text22" type="text" name="username" value=""/>
+          </div>
+          <div class="field-row-stacked" style="width: 200px">
+            <label for="text23">Password</label>
+            <input id="text23" type="password" name="password" value=""/>
+          </div>
+          <div class="field-row-stacked" style="width: 200px">
+            <label for="text24">Invite Code (Optional)</label>
+            <input id="text24" type="text" name="code" value="xxxxx"/>
+          </div>
+          <section class="field-row" style="justify-content: flex-end">
+            <button type="submit">Submit</button>
+          </section>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
