@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+<% if (message) { %>
+    <h1><%= message %></h1>
+<% } %>
+
+<form action="/flag" method="post">
+  <input type="text" name="username" value="">
+  <input type="password" name="password" value="">
+  <input type="submit" placeholder="Submit">
+</form>
