@@ -41,8 +41,9 @@ def postComplaints():
 
 @app.route('/admin', methods=['GET'])
 def adminDashabord():
-    cookie = request.cookies.get('Session')
-    print(cookie)
+    args = request.args
+    print(args.to_dict())
+
     # ip = request.remote_addr
     # if (ip != '127.0.0.1'):
     #     print("UNAUTHORIZED  IP")
