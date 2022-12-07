@@ -9,5 +9,5 @@ const puppeteer = require("puppeteer");
   });
   const page = await browser.newPage();
 
-  await page.goto("http://motherload.td.org.uit.no:5000/admin?cookie=12345");
+  await page.goto("http://motherload.td.org.uit.no:5000/admin?cookie=admin");
 })();
