@@ -8,9 +8,21 @@ const puppeteer = require("puppeteer");
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
   const page = await browser.newPage();
-  await page.evaluate(() => {
-    document.cookie =
-      "oauth=12344566656; path=/; domain=motherload.td.org.uit.no:5000";
-  });
+
+  var cookies = [
+    {
+      name: "sample-cookie1",
+      value: "1",
+      domain: "stackoverflow.com",
+    },
+    {
+      name: "sample-cookie2",
+      value: "2",
+      domain: "pptr.dev",
+    },
+  ];
+
+  await page.setCookie(...cookies);
+
   await page.goto("motherload.td.org.uit.no:5000/admin");
 })();
