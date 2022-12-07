@@ -8,7 +8,6 @@ function App() {
   const [showForm, setShowForm] = useState(false);
 
   const sendComplaint = () => {
-    console.log("Sending complaint");
     const data = new FormData();
     data.append("email", email);
     data.append("complaint", complaint);
@@ -74,7 +73,6 @@ function App() {
                 (Windows 98 5.1 build 2600 Service Pack 2) CPU=x86 (2 logical
                 CPUs) (0x7fe6b000 RAM)
                 <br />
-                <br />
                 In case of missing flags, please report the incident as our
                 staff are holding the very updated assets on their session.
               </div>
@@ -86,25 +84,21 @@ function App() {
       {showForm && (
         <div className="reportForm">
           <div className="window">
-            <div class="title-bar">
-              <div class="title-bar-text">Report incident</div>
+            <div className="title-bar">
+              <div className="title-bar-text">Report incident</div>
             </div>
             <div className="window-body">
               <div className="field-row-stacked" style={{ width: "200px" }}>
-                <label for="text22">Email</label>
-                <input
-                  id="text22"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.value)}
-                />
+                <label>Email</label>
+                <input onChange={(e) => setEmail(e.target.value)} />
               </div>
               <div className="field-row-stacked" style={{ width: "200px" }}>
-                <label for="text20">Incident description</label>
+                <label>Incident description</label>
                 <textarea
                   id="text20"
                   rows="8"
-                  onChange={(e) => setComplaint(e.value)}
+                  type="text"
+                  onChange={(e) => setComplaint(e.target.value)}
                 ></textarea>
               </div>
               <button
