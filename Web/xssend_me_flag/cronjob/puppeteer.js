@@ -9,20 +9,5 @@ const puppeteer = require("puppeteer");
   });
   const page = await browser.newPage();
 
-  var cookies = [
-    {
-      name: "sample-cookie1",
-      value: "1",
-      domain: "stackoverflow.com",
-    },
-    {
-      name: "sample-cookie2",
-      value: "2",
-      domain: "pptr.dev",
-    },
-  ];
-
-  await page.setCookie(...cookies);
-
-  await page.goto("motherload.td.org.uit.no:5000/admin");
+  await page.goto("http://motherload.td.org.uit.no:5000/admin?cookie=12345");
 })();
