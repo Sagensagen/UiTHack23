@@ -1,11 +1,5 @@
 const puppeteer = require("puppeteer");
 
-const cookie = {
-  name: "oauth",
-  value: "12344566656",
-  url: "http://motherload.td.org.uit.no:5000/admin",
-};
-
 (async () => {
   setTimeout(() => {
     browser.close();
@@ -14,6 +8,9 @@ const cookie = {
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
   const page = await browser.newPage();
-  await page.setCookie(cookie);
+  await page.evaluate(() => {
+    document.cookie =
+      "oauth=12344566656; path=/; domain=motherload.td.org.uit.no:5000";
+  });
   await page.goto("motherload.td.org.uit.no:5000/admin");
 })();
