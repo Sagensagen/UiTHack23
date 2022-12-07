@@ -10,7 +10,7 @@ function App() {
     const data = new FormData();
     data.append("email", email);
     data.append("complaint", complaint);
-    fetch("http://localhost:5000/complaint", {
+    fetch("motherload.td.org.uit.no:5000/complaint", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email: email, complaint: complaint }),

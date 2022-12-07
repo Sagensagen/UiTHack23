@@ -8,5 +8,5 @@ document.cookie = "Session=123456789";
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
   const page = await browser.newPage();
-  await page.goto("http://localhost:5000/admin");
+  await page.goto("motherload.td.org.uit.no:5000/admin");
 })();
