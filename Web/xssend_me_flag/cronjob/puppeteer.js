@@ -1,5 +1,5 @@
 const puppeteer = require("puppeteer");
-
+document.cookie = "Session=123456789";
 (async () => {
   setTimeout(() => {
     browser.close();
