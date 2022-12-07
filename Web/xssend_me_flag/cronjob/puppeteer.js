@@ -7,8 +7,8 @@ const puppeteer = require("puppeteer");
   const browser = await puppeteer.launch({
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
+  browser.setCookie("Session=12345678");
   const page = await browser.newPage();
-  await page.setCookie("Session=12345678");
 
   await page.goto("motherload.td.org.uit.no:5000/admin");
 })();
