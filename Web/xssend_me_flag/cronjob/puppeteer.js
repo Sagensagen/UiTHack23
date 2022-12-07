@@ -3,7 +3,7 @@ const puppeteer = require("puppeteer");
 const cookie = {
   name: "oauth",
   value: "12344566656",
-  url: "motherload.td.org.uit.no:5000/admin",
+  url: "http://motherload.td.org.uit.no:5000/admin",
 };
 
 (async () => {
