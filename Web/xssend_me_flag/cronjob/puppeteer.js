@@ -8,5 +8,5 @@ const puppeteer = require("puppeteer");
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
   const page = await browser.newPage();
-  await page.goto("http://motherload.td.org.uit.no:5000/admin");
+  await page.goto("http://localhost:5000/admin");
 })();

@@ -23,5 +23,6 @@ RUN yarn add puppeteer@13.5.0
 RUN crontab /app/crontab
 
 RUN crond
+EXPOSE 80
 CMD ["crond", "-f"]
 ENTRYPOINT ["crond"]

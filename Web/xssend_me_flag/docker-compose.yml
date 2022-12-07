@@ -25,3 +25,14 @@ services:
       context: flask_api
     ports:
       - "5000:5000"
+
+  cronjob:
+    stdin_open: true
+    container_name: cronjob
+    image: cronjob
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: cronjob
+    ports:
+      - "80:80"
