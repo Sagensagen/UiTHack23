@@ -1,12 +1,3 @@
-.contentWrapper {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 body {
   display: flex;
   width: 100vw;
@@ -14,7 +5,39 @@ body {
   margin: 0;
   background-color: #c0c0c0;
 }
+.contentWrapper {
+  width: 100vw;
+  height: 100vh;
+}
 
+.mainContent {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navBar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+.status {
+  position: relative;
+  display: flex;
+  top: 0;
+  left: 0;
+  margin-right: 20px;
+  max-width: 20vw;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 .warning {
   width: 100%;
   height: 100%;
@@ -47,4 +70,20 @@ body {
 .reportForm {
   position: absolute;
   background-color: #c0c0c0;
+}
+
+.footerWrapper {
+  padding: 0px 50px 0px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
