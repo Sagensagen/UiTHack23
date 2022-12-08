@@ -14,8 +14,8 @@ Add emoji!
 | Noob      | Web | Pwn      |  Misc | Rev_Eng  | Crypto| IRL |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 |cat flag 🐈‍⬛ | |Mp3 Player :heavy_check_mark: | | | | ARP poisoning  :test_tube: |
-|Navigate 🧭| | | | Fresh Coffee :coffee: | | |
-|scp+unzip*2 🤐| | | | | | |
+|Navigate 🧭| | | | | | |
+|scp+unzip*2 🤐| Xss98 :flags:| | | | | |
 |Moms spaghetti 🍝|| | | | | |
 |Get served :shipit:| | | | | | |
 
