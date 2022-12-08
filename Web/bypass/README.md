@@ -1,4 +1,4 @@
-# Web - Win98 Bypass
+# Web - Bypass
 > Web - 250pts
 
 I've hid the flag behind this super secure admin login prompt. Are you able to retrieve the flag?
