@@ -58,5 +58,15 @@ def adminDashabord():
 
 
 if __name__ == "__main__":
+    if not (os.path.exists('complaints.db')):
+        conn = sqlite3.connect('complaints.db')
+        c = conn.cursor()
+        c.execute('''
+                  CREATE TABLE IF NOT EXISTS complaints
+                    ( email text, complaint text)
+                  ''')
+        conn.commit()
+        conn.close()
+
     port = int(os.environ.get('PORT', 5000))
     app.run(debug=True, host='0.0.0.0', port=port)

@@ -36,3 +36,5 @@ services:
       context: cronjob
     ports:
       - "80:80"
+# docker-compose up --build -d
+# docker-compose down

@@ -1,3 +1,5 @@
-Cronjob -> triggers xss
-flask api -> Serves xss page & post complaint
-client -> App to let clients file complaints with potential xss
+# WEB - 150
+
+Bill gates approves this design
+
+[Writeup](./writeup.md)
