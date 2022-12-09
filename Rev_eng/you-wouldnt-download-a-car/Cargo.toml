@@ -1,0 +1,17 @@
+[package]
+name = "you-wouldnt-download-a-car"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libc = { version = "0.2", default-features = false }
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 0
+panic = "abort"
+strip = true
