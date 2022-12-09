@@ -14,7 +14,7 @@ Repository for the yearly CTF challenge by UiT students
 Add emoji!
 | Noob      | Web | Pwn      |  Misc | Rev_Eng  | Crypto| IRL |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-|cat flag 🐈‍⬛ | |Mp3 Player :heavy_check_mark: | | | Hotel Caesar :heavy_check_mark: | ARP poisoning 	:test_tube: |
+|cat flag 🐈‍⬛ | Bypass :heavy_check_mark: |Mp3 Player :heavy_check_mark: | | | | ARP poisoning :test_tube: |
 |Navigate 🧭| | | | | | |
 |scp+unzip*2 🤐| Xss98 :flags:| | | | | |
 |Moms spaghetti 🍝|| | | | | |
