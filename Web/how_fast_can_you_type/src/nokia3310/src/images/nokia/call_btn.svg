@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="67px" viewBox="0 0 55 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>call_btn</title>
+    <defs>
+        <linearGradient x1="89.7005071%" y1="59.2660852%" x2="13.8074602%" y2="38.3498127%" id="linearGradient-1">
+            <stop stop-color="#A7A7A2" offset="0%"></stop>
+            <stop stop-color="#A7A7A7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="55.1966542%" x2="-23.4216151%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.05" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.495018116" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="26.0046617%" cy="-95.5188338%" fx="26.0046617%" fy="-95.5188338%" r="257.239017%" gradientTransform="translate(0.260047,-0.955188),scale(0.638059,1.000000),rotate(171.477741),translate(-0.260047,0.955188)" id="radialGradient-3">
+            <stop stop-color="#000000" stop-opacity="0.100515172" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="49.8758129%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="74.6930741%" y1="29.6440495%" x2="50%" y2="70.3559505%" id="linearGradient-4">
+            <stop stop-color="#777777" offset="0%"></stop>
+            <stop stop-color="#424242" offset="100%"></stop>
+        </linearGradient>
+        <path d="M10.1452816,22.32079 C15.4396904,21.1917599 20.3633867,20.0488711 24.9163704,18.8921237 C30.2603078,17.5344237 35.576528,15.6824067 40.8650309,13.3360726 C42.8338669,12.4625642 45.1380421,13.3505036 46.0115498,15.31934 C46.1402791,15.6094887 46.2331045,15.914268 46.2879659,16.2269144 L49.4357215,34.165472 C49.9320795,36.994134 48.041373,39.689595 45.2127108,40.1859525 C45.1439382,40.1980203 45.0749294,40.2087017 45.0057266,40.2179903 C37.0289273,41.2886511 31.3926238,41.9046743 28.0968164,42.0660598 C16.3758399,42.6399998 8.51316174,40.8710665 6.19010132,39.6897525 C2.89710362,38.0152096 3.31757584,32.9283477 7.45151799,24.4291667 L7.45152665,24.4291709 C7.97687917,23.3490721 8.97060747,22.5712887 10.1452816,22.32079 Z" id="path-5"></path>
+        <filter x="-6.9%" y="-10.8%" width="113.3%" height="121.6%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="1" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.82745098   0 0 0 0 0.831372549   0 0 0 0 0.784313725  0 0 0 1 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner2"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner2" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.933753189   0 0 0 0 0.933753189   0 0 0 0 0.933753189  0 0 0 1 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-11.5%" y="-20.8%" width="122.9%" height="140.1%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="1.3" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <path d="M29.0612936,31.071301 C28.8587709,30.8687784 28.5803022,30.7548593 28.2891758,30.7548593 C27.9980495,30.7548593 27.7195808,30.8687784 27.5170581,31.071301 L26.90949,31.6788691 C26.8968323,31.6915268 26.871517,31.7041845 26.8208863,31.7041845 C26.8208863,31.7041845 26.8208863,31.7041845 26.8208863,31.7041845 C26.5044446,31.7041845 25.7196692,31.1219317 24.7830017,30.1726066 L24.5931367,29.9953992 C23.4159736,28.8055784 23.0362435,28.1094067 23.1754779,27.9575147 L23.6944423,27.4385503 C23.9222803,27.2107122 24.048857,26.8942705 24.048857,26.5651712 C24.048857,26.2360718 23.9222803,25.9322877 23.6944423,25.691792 L22.7324595,24.7298093 C22.5299368,24.5272866 22.2514681,24.4133676 21.9603417,24.4133676 C21.6692154,24.4133676 21.3907466,24.5272866 21.188224,24.7298093 L20.5679982,25.350035 C20.1882682,25.729765 19.9984031,26.2234141 20.0490338,26.7297208 C20.1882682,28.3878754 21.8464227,30.5903097 22.9349822,31.6662115 L23.1881355,31.9193648 C24.238722,32.982609 26.4158409,34.6154482 28.0613378,34.7926555 C28.1246262,34.8053132 28.1879145,34.8053132 28.2512028,34.8053132 C28.7195366,34.8053132 29.1625549,34.6154482 29.504312,34.2736911 L30.1245377,33.6534654 C30.3270604,33.4509427 30.4409794,33.172474 30.4409794,32.8813476 C30.4409794,32.5902212 30.3270604,32.3117525 30.1245377,32.1092298 L29.0612936,31.071301 Z" id="path-8"></path>
+        <filter x="-14.4%" y="-14.4%" width="128.8%" height="128.9%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="008---404-page-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NOKIA-3310-Product-Design" transform="translate(-577.000000, -353.000000)">
+            <g id="call_btn" transform="translate(578.000000, 354.000000)">
+                <g id="Call-Button" transform="translate(26.864374, 27.588815) rotate(48.000000) translate(-26.864374, -27.588815) ">
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    <use fill="url(#radialGradient-3)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use stroke="url(#linearGradient-4)" stroke-width="1.3" xlink:href="#path-5"></use>
+                </g>
+                <path d="M46.01908,35.4108171 C47.2926315,33.2352637 47.1531946,31.7932878 45.6007695,31.0848894 C34.5188196,26.3806413 25.7771977,20.8896013 19.3759038,14.6117692 C17.9794194,13.442002 16.4232386,13.2223731 14.7073613,13.9528825 C8.38721154,15.9423438 5.9983769,18.4281918 7.54085737,21.4104265 C9.81829064,25.5240251 11.7951095,28.6844703 13.4713139,30.8917619" id="Call-Button---Effects1" stroke="#979797" stroke-width="1.3" filter="url(#filter-7)"></path>
+                <g id="Shape" fill-rule="nonzero" transform="translate(25.240979, 29.609340) rotate(43.000000) translate(-25.240979, -29.609340) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                    <use fill="#3E454C" xlink:href="#path-8"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
