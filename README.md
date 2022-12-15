@@ -14,10 +14,8 @@ Add emoji!
 | Noob      | Web | Pwn      |  Misc | Rev_Eng  | Crypto| IRL |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 |cat flag 🐈‍⬛ | Bypass :heavy_check_mark: |Mp3 Player :heavy_check_mark: | | Forrest :heavy_check_mark: | Hotel Caesar :heavy_check_mark: | ARP poisoning :test_tube: |
-|Navigate 🧭| | | | |Padding Oracle :crystal_ball: | |
-
+|Navigate 🧭| | Word 1.1 💾 | | |Padding Oracle :crystal_ball: | |
 |scp+unzip*2 🤐| Xss98 :flags:| | | Fresh Coffee :coffee: | | |
-
 |Moms spaghetti 🍝|| | | | | |
 |Get served :shipit:| | | | | | |
 
