@@ -16,7 +16,7 @@ Add emoji!
 |cat flag 🐈‍⬛ | Bypass :passport_control: |Mp3 Player :notes: | | Forrest :deciduous_tree: | Hotel Caesar :hotel: | ARP poisoning :test_tube: |
 |Navigate 🧭| | Word 1.1 💾 | | |Padding Oracle :crystal_ball: | |
 |scp+unzip*2 🤐| Xss98 :flags:| | | Fresh Coffee :coffee: | | |
-|Moms spaghetti 🍝|| | | | | |
+|Moms spaghetti 🍝|| | | Pokemon Battle :baseball: | | |
 |Get served :shipit:| | | | | Code Page 📟 | |
 
 
