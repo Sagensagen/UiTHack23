@@ -17,7 +17,7 @@ Add emoji!
 |Navigate 🧭| | Word 1.1 💾 | | |Padding Oracle :crystal_ball: | |
 |scp+unzip*2 🤐| Xss98 :flags:| | | Fresh Coffee :coffee: | | |
 |Moms spaghetti 🍝|| | | Pokemon Battle :baseball: | | |
-|Get served :shipit:| | | | | Code Page 📟 | |
+|Get served :shipit:| | | | Pokemon Battle V2 :8ball: | Code Page 📟 | |
 
 
 # Developer guidelines
