@@ -2,18 +2,20 @@
 >
 >> Crypto - 150pts
 >
->I fired up my old machine, the whirling and clicking of the hard drive was comforting. I opened up the terminal and typed in the command to run the program. There I was greeted with a weird [text](./text), but im no Klingon. Can you help me translate it?
->
->Tips: You may find some decoders online
+> I fired up my old machine, the whirling and clicking of the hard drive was comforting. I opened up the terminal and typed in the passcode: 2 1 0 2 7 and was greeted with the homescreen. There I found with a weird [text](./file1), but im no Klingon. Can you help me translate it?
+
+> Tips: There was another [file](file2) in the directory, maybe it can help you?
 
 ## Writeup
 
-The text is encoded using UTF-16LE encoding, which is a 16-bit little endian encoding scheme. This means that each character is encoded using 2 bytes. It can be decoded using `iconv` or any other tool that supports UTF-16LE encoding.
+The text is encoded using a japanese EBCDIC encoding that was used in Windows XP: Extended Alpha Lowercase (21027). After finding the encoding throught the tips, one can decode it using an online en/decoder such as [CyberChef](https://gchq.github.io/CyberChef/). Steps:
 
-```bash
-iconv -f utf-8 -t utf-16le text > text.string
-```
+1. Open CyberChef
+2. Select `Encode Text` from the `Operations` menu
+3. Choose `Extended Alpha Lowercase (21027)`
+4. Copy the text from `file1` into the input field
+5. You should now see the flag
 
 ## Flag
 
-`UiTHack23{FL3X1B1L3_3NC0D1NG_12_AW3S0M3}`
+`UiTHack23{lost_in_translation}`
