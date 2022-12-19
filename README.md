@@ -17,7 +17,8 @@ Add emoji!
 |Navigate 🧭| | Word 1.1 💾 | | |Padding Oracle :crystal_ball: | |
 |scp+unzip*2 🤐| Xss98 :flags:| | | Fresh Coffee :coffee: | | |
 |Moms spaghetti 🍝|| | | | | |
-|Get served :shipit:| | | | | | |
+|Get served :shipit:| | | | | Code Page 📟 | |
+
 
 # Developer guidelines
 
