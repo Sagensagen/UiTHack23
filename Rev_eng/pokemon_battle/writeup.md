@@ -29,25 +29,33 @@ With the extracted files we can view the source code of the python files by deco
 ```command
 $ uncompyle6 <filename>
 ```
+
+From _main.pyc_ we get the encrypted flag
+```command
+$ uncompyle6 main.pyc
+<snip>
+  else:
+    Flag().print_flag(b'a\x1a<#RT\x08ZF\x16SC\x1c\\Rh\x00\\B\x0e\\,[\x06l\x03\x0f\x04*\\\x01B\x15')
+<snip>
+```
 Within the directory of the extracted files (probably called _pokemon_extracted_) we have a directory storing the imported python-files, _PYZ-00.pyz_extracted_. This directory has a file `get_flag.pyc`.
 
-By decompiling it we get the encrypted flag and its key
+By decompiling it we get the encryption method and the key
 ```
 $ uncompyle6 get_flag.pyc
 class Flag:
 
     def __init__(self):
-        self.enc_flag = b'a\x1a<#RT\x08ZF\x16SC\x1c\\Rh\x00\\B\x0e\\,[\x06l\x03\x0f\x04*\\\x01B\x15'
         self.key = b'4shk37chum4shk37chum4shk37chum4sh'
 
-    def print_flag(self):
-        flag = self.xor(self.enc_flag, self.key)
+    def print_flag(self, flag):
+        flag = self.xor(flag, self.key)
         <snip>
 
     def xor(self, data, key):
         return bytearray((a ^ b for a, b in zip(*map(bytearray, [data, key]))))
 ```
-Xoring the encrypted flag with the key gives us the flag
+By xor-ing the encrypted flag (from main, passed as _flag_ argument to the print_\flag function) and the key, we get the flag
 ```
 UiTHack23{g0t7a_c47ch_3m_4ll_151}
 ```
