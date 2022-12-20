@@ -44,5 +44,16 @@ services:
       context: Crypto/padding_oracle/src
     ports:
       - "7777:7777"
+
+  wizardry:
+    stdin_open: true
+    container_name: wizardry
+    image: wizardry
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: Pwn/wizardry/src
+    ports:
+      - "6200:6200"
 # docker-compose up --build -d
 # docker-compose down

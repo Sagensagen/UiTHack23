@@ -3,6 +3,8 @@
 >
 > I've hid the flag behind this super secure admin login prompt. Are you able to retrieve the flag?
 > Login as admin to view the flag.
+> 
+> motherload.td.org.uit.no:5100/
 
 ## Writeup
 The source code running the server is vulnerable to a prototype poisoning attack at the __/flag__ endpoint.
