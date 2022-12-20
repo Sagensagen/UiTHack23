@@ -55,5 +55,28 @@ services:
       context: Pwn/wizardry/src
     ports:
       - "6200:6200"
+
+  mp3_player:
+    stdin_open: true
+    container_name: mp3_player
+    image: mp3_player
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: Pwn/mp3_player/src
+    ports:
+      - "6100:6100"
+
+  bypass:
+    stdin_open: true
+    container_name: bypass
+    image: bypass
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: Web/bypass/src
+    ports:
+      - "5100:5100"
+
 # docker-compose up --build -d
 # docker-compose down
