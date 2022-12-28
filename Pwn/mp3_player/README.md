@@ -8,7 +8,7 @@ However, we might have messed up some of the instructions when setting it up...
 
 You can connect to the mp3 player with
 ```bash
-$ nc wwww.limewire.td.org.uit.no 6100
+$ nc motherload.td.org.uit.no 6100
 ```
 
 Hint 1. Maybe there is a way to call the function printing the flag

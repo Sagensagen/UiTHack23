@@ -8,7 +8,7 @@
 >
 > You can connect to the mp3 player with
 > ```bash
-> $ nc wwww.limewire.td.org.uit.no 6100
+> $ nc motherload.td.org.uit.no 6100
 > ```
 
 ## Writeup
