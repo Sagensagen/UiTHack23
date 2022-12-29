@@ -3,7 +3,7 @@ from pwn import *
 elf = ELF("./tamagotchi", checksec=False)
 p = elf.process()
 
-# Wait for input prompt
+# Overflow the buffer
 p.recvuntil(b">> ")
 p.sendline(b"2")
 p.recvuntil(b">> ")
