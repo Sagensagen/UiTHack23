@@ -1,7 +1,7 @@
 # Pwn - Remote tamagOtchi Pet
 > Pwn - 500pts
 
-You might remember the Tamagotchi from the late 90's or early 2000's. Good news, we have improved the tamagotchi by putting everyone's favourite animal on the web so you don't loose it!
+You might remember the Tamagotchi from the late 90's and early 2000's. Good news, we have improved the tamagotchi by putting everyone's favourite animal on the web so you don't loose it!
 
 Here's your [tamagotchi](src/tamagotchi)
 
