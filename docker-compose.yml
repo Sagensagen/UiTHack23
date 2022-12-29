@@ -78,5 +78,15 @@ services:
     ports:
       - "5100:5100"
 
+  ollivanders:
+    stdin_open: true
+    container_name: ollivanders
+    image: ollivanders
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: Pwn/ollivanders/src
+    ports:
+      - "6300:6300"
 # docker-compose up --build -d
 # docker-compose down
