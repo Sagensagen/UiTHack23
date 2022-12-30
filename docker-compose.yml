@@ -88,5 +88,17 @@ services:
       context: Pwn/ollivanders/src
     ports:
       - "6300:6300"
+
+  tamagotchi:
+    stdin_open: true
+    container_name: tamagotchi
+    image: tamagotchi
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: Pwn/tamagotchi/src
+    ports:
+      - "6400:6400"
+
 # docker-compose up --build -d
 # docker-compose down
