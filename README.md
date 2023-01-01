@@ -13,7 +13,7 @@ Repository for the yearly CTF challenge by UiT students
 Add emoji!
 | Noob      | Web | Pwn      |  Misc | Rev_Eng  | Crypto| IRL |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-|cat flag 🐈‍⬛ | Bypass :passport_control: |Mp3 Player :notes: | | Forrest :deciduous_tree: | Hotel Caesar :hotel: | ARP poisoning :test_tube: |
+|cat flag 🐈‍⬛ | Bypass :passport_control: |Mp3 Player :notes: | So you think you can math :triangular_ruler: | Forrest :deciduous_tree: | Hotel Caesar :hotel: | ARP poisoning :test_tube: |
 |Navigate 🧭| | Ollivanders :dollar: | Word 1.1 💾 | |Padding Oracle :crystal_ball: | |
 |scp+unzip*2 🤐| Xss98 :flags:| Wizardry :zap: | | Fresh Coffee :coffee: | | |
 |Moms spaghetti 🍝|| | | Pokemon Battle :baseball: | | |
