@@ -1,3 +1,11 @@
+> # Misc - So you think you can math?
+> > Misc - 100pts
+>
+> Do you remember your pluses and minuses? What about your multiplications and divisions?
+> Prove it to me by answering 300 questions, and I will give you a flag!
+>
+> Some starting code can be found [here](src/solve.py).
+
 ## Writeup
 The starting code can be expanded to the following to get the flag
 
@@ -14,4 +22,7 @@ for i in range(300):
     p.sendline(str(int(eval(question))).encode("utf-8"))
 
 p.interactive()
+```
+```
+UiTHack23{y0u_kn0w_m4th_0r_jus7_lucky_gu3ss1ng?}
 ```

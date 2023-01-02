@@ -28,6 +28,6 @@ def start():
     print(f"I think you can math: {flag}", flush=True)
 
 if __name__ == '__main__':
-    print("So you think you can math?\nShow me by answering 500 questions correct!\nThe answer must be an integer, Ready?", flush=True)
+    print("So you think you can math?\nShow me by answering 300 questions correct!\nThe answer must be an integer, Ready?", flush=True)
     _ = input()
     start()
