@@ -9,10 +9,11 @@ RUN apt-get install -y socat
 # User
 RUN adduser --disabled-password --gecos "" wizard
 
+RUN chown -R root:root /home/wizard
 COPY spell /home/wizard
 COPY flag.txt /home/wizard
-RUN chmod 555 /home/wizard/spell
-RUN chmod 555 /home/wizard/flag.txt
+RUN chmod 755 /home/wizard/spell
+RUN chmod 755 /home/wizard/flag.txt
 
 USER wizard
 WORKDIR /home/wizard

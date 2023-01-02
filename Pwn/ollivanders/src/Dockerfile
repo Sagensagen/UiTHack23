@@ -9,10 +9,11 @@ RUN apt-get install -y socat
 # User
 RUN adduser --disabled-password --gecos "" ollivander
 
+RUN chown -R root:root /home/ollivander
 COPY ollivanders /home/ollivander
 COPY flag.txt /home/ollivander
-RUN chmod 555 /home/ollivander/ollivanders
-RUN chmod 555 /home/ollivander/flag.txt
+RUN chmod 755 /home/ollivander/ollivanders
+RUN chmod 755 /home/ollivander/flag.txt
 
 USER ollivander
 WORKDIR /home/ollivander

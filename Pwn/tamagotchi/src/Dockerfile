@@ -9,10 +9,11 @@ RUN apt-get install -y socat
 # User
 RUN adduser --disabled-password --gecos "" tamagotchi
 
+RUN chown -R root:root /home/tamagotchi
 COPY tamagotchi /home/tamagotchi
 COPY flag.txt /home/tamagotchi
-RUN chmod 555 /home/tamagotchi/tamagotchi
-RUN chmod 555 /home/tamagotchi/flag.txt
+RUN chmod 755 /home/tamagotchi/tamagotchi
+RUN chmod 755 /home/tamagotchi/flag.txt
 
 USER tamagotchi
 WORKDIR /home/tamagotchi
