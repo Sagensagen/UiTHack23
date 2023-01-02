@@ -1,0 +1,74 @@
+
+
+.blink {
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}
+.blink2 {
+    animation: blink 0.2s linear infinite;
+}
+
+@keyframes blink2 {
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}
+.blink3 {
+    animation: blink 0.9s linear infinite;
+}
+
+@keyframes blink3 {
+    0%{opacity: 0;}
+    50%{opacity: .1;}
+    100%{opacity: 1;}
+}
+
+
+
+
+
+.dashed {
+    padding: 60px;
+    max-width: 650px;
+    /*background: #80d5a6;*/
+    border: 5px dashed mediumseagreen;
+    box-shadow: 0 0 0 2.5px #226741, 0 0 0 12.5px #fff, inset 0 0 0 2.5px #226741, 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 6px #fff, inset 0 0 100vw 100vw beige;
+    color: mediumseagreen;
+    font-family: Marcellus, serif;
+    font-size: 2rem;
+    text-shadow: 0 2px #fff;
+    text-align: center;
+}
+
+#wrapper .text {
+    position:relative;
+    bottom:30px;
+    left:0px;
+    visibility:hidden;
+}
+
+#wrapper:hover .text {
+    visibility:visible;
+}
+
+
+@keyframes blinking {
+    50% {
+        border-color: #ff0000;
+    }
+}
+.blinkBorder {
+    border: 4px solid  ;
+    position: fixed ;
+    top: 10px ;
+    left: 10px ;
+    text-align:center ;
+    font-family: monospace ;
+
+    -webkit-animation: blinking .9s step-end infinite alternate;
+}
