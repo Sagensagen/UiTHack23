@@ -85,7 +85,7 @@ let downLoad fileName fileContent =
                  prop.href "/#/necro_htlrr_heroin-playtime_ntsfe_join-isis-request-form_view."
                  prop.children[
                      Html.button[prop.text "Click To renew today!"]
-                     
+
                  ]
              ]
              ]
