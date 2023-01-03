@@ -1,0 +1,15 @@
+FROM docker.io/rust:latest as rust-builder
+COPY backend /usr/src/nokia
+WORKDIR /usr/src/nokia
+RUN cargo install --path . --root /usr/local
+
+FROM docker.io/debian:stable-slim
+RUN apt update && apt upgrade -y && rm -rf /var/lib/apt/lists/*
+
+COPY --from=rust-builder /usr/local/bin/nokia /usr/local/bin/nokia
+
+RUN useradd -r nokia
+USER nokia
+STOPSIGNAL SIGKILL
+ENV RUST_LOG=tower_http=info
+CMD ["nokia"]

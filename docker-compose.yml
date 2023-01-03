@@ -110,7 +110,7 @@ services:
       context: Misc/so_you_think_you_can_math/src
     ports:
       - "8100:8100"
-
+        
   popup_roulette:
     stdin_open: true
     container_name: popup-roulette
@@ -121,5 +121,15 @@ services:
       context: Web/popup_roulette/popup_roulette
     ports:
       - "8900:8900"
+
+  nokia:
+    container_name: nokia
+    image: nokia
+    build:
+      context: Web/nokia
+      dockerfile: Containerfile
+    ports:
+      - "8001:8080"
+  
 # sudo docker compose up --build -d
 # sudo docker compose down
