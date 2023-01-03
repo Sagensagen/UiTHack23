@@ -14,13 +14,13 @@ open Feliz.style
 
 
 
-     
+
+
+
 [<ReactComponent>]
 let HomePage (url: List<string>) =
     let (currentState, setState) = React.useState(false)
-    
-    
-        
+    let (count, setCount) = React.useState(0)
     
     Html.div[
     prop.style[
@@ -102,8 +102,6 @@ let HomePage (url: List<string>) =
         ]
             ]
         
-       
-        
         
         Bulma.modal[
                 if currentState = true
@@ -116,16 +114,17 @@ let HomePage (url: List<string>) =
                         
                 match url with
                 | [] -> Html.none
-                | ["BqL0LZQ~VVCeclogin-922java0day!shockwave-flash.gpg.js.docm"] -> Popups.Popup.trojan ()
-                | [ "necro_htlrr_heroin-playtime_ntsfe_join-isis-request-form_view." ] -> Popups.Popup.virus ()
-                | [ "sexual_ygszz_tentacle-fun-time_8o1la_join-isis-request-form_free-samples." ] -> Popups.Popup.spyware ()
-                | [ "6h2.xyztrump_xvcb_cuck-cuck-stumped_gr8_OUT-OUT-OUT_live." ] -> Popups.Popup.ransomware ()
-                | [ "trans_trmp_weeabo-arsonporn_ttrjn_arson-hentai-club_torr3nt." ] -> Popups.Popup.adware ()
-                | [ "ku-klux_jfoqwjefqq_crippled-children_8o1la_tentacle-fun-time_stream." ] -> Popups.Popup.phishing ()
-                | [ "_xxvcb_cheap-krokodil_glkz_white_p0wer_torr3nt." ] -> Popups.Popup.malware ()
-                | [ "bigly_jfoqwjefqq_FAKE-NEWS_trjn_OUT-OUT-OUT_twitter." ] -> Popups.Popup.rootkit ()
-                | [ "0x8c*download()194mobiads(windows8!downloader.sh.exe" ] -> Popups.Popup.posten ()
-                | [ "OAEN=yz>wl*,P6WY;trojan$823iphone+server1-torrent(.xlsx.dmg" ] -> Popups.Popup.bankid ()
+                // | ["BqL0LZQ~VVCeclogin-922java0day!shockwave-flash.gpg.js.docm"] -> Popups.bankid (count, setCount)
+                | ["BqL0LZQ~VVCeclogin-922java0day!shockwave-flash.gpg.js.docm"] -> Popups.Trojan ()
+                | [ "necro_htlrr_heroin-playtime_ntsfe_join-isis-request-form_view." ] -> Popups.Virus ()
+                | [ "sexual_ygszz_tentacle-fun-time_8o1la_join-isis-request-form_free-samples." ] -> Popups.Spyware ()
+                | [ "6h2.xyztrump_xvcb_cuck-cuck-stumped_gr8_OUT-OUT-OUT_live." ] -> Popups.Ransomware ()
+                | [ "trans_trmp_weeabo-arsonporn_ttrjn_arson-hentai-club_torr3nt." ] -> Popups.Adware ()
+                | [ "ku-klux_jfoqwjefqq_crippled-children_8o1la_tentacle-fun-time_stream." ] -> Popups.Phishing ()
+                | [ "_xxvcb_cheap-krokodil_glkz_white_p0wer_torr3nt." ] -> Popups.Malware ()
+                | [ "bigly_jfoqwjefqq_FAKE-NEWS_trjn_OUT-OUT-OUT_twitter." ] -> Popups.Rootkit ()
+                | [ "0x8c*download()194mobiads(windows8!downloader.sh.exe" ] -> Popups.Posten ()
+                | [ "OAEN=yz>wl*,P6WY;trojan$823iphone+server1-torrent(.xlsx.dmg" ] -> Popups.Bankid (count, setCount)
                 | otherwise -> Html.h1 "404 invalid link"] ]]
                 ]]
                 

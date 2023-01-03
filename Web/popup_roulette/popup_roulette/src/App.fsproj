@@ -5,11 +5,14 @@
   <ItemGroup>
     <None Include="index.html" />
     <Compile Include="Extensions.fs" />
+    <Compile Include="Articles.fs" />
     <Compile Include="Popups.fs" />
     <Content Include="assets\styles.css" />
+    <Content Include="assets\horror.txt" />
     <Compile Include="Components.fs" />
     <Compile Include="RoutingComponent.fs" />
     <Compile Include="Navbar.fs" />
+    <Compile Include="Contexts.fs" />
     <Compile Include="MainContent.fs" />
     <Compile Include="Main.fs" />
   </ItemGroup>

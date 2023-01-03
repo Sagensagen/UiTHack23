@@ -7,11 +7,13 @@ open Fable.Core
 open Feliz
 open Feliz.Bulma
 open Fable.Import
+open Feliz.Bulma.ElementBuilders
 open Feliz.Router
 open Feliz.style
 Fable.Core.JsInterop.importAll "./assets/styles.css"
 open Fable.FontAwesome
 open Feliz.Delay
+open articles
 
 
 let downLoad fileName fileContent =
@@ -23,14 +25,12 @@ let downLoad fileName fileContent =
 
 
 
-    
 
-type Popup =
 
 
     
-    [<ReactComponent>]
-    static member trojan() =
+[<ReactComponent>]
+   let Trojan() =
          Browser.WebStorage.sessionStorage.removeItem("flag")
          Html.div[
          React.delay[delay.waitFor 2000; delay.children[
@@ -91,9 +91,9 @@ type Popup =
         ]]]]
     
          
-    [<ReactComponent>]
-    static member virus() =
-         Html.div[React.delay[delay.waitFor 1234; delay.children[
+[<ReactComponent>]
+    let Virus() =
+        Html.div[React.delay[delay.waitFor 1234; delay.children[
         Html.div[
         Bulma.box [
             prop.style[
@@ -125,9 +125,9 @@ type Popup =
     ]
     ]]]
 
-    [<ReactComponent>]
-    static member spyware() =
-         Html.div[React.delay[delay.waitFor 3000; delay.children[
+[<ReactComponent>]
+    let Spyware() =
+        Html.div[React.delay[delay.waitFor 3000; delay.children[
         
         Bulma.container [
             Bulma.color.hasTextLight
@@ -156,8 +156,8 @@ type Popup =
             ]
         ]
     ]]]
-    [<ReactComponent>]
-    static member ransomware() =
+[<ReactComponent>]
+    let Ransomware() =
         Html.div[React.delay[delay.waitFor 500; delay.children[
         Bulma.container[
         
@@ -179,8 +179,8 @@ type Popup =
     ]
     ]]]
 
-    [<ReactComponent>]
-    static member adware() =
+[<ReactComponent>]
+    let Adware() =
         Html.div[
         React.delay[delay.waitFor 9000; delay.children[
         Bulma.container[
@@ -213,8 +213,8 @@ type Popup =
         ]
     ]]]]
 
-    [<ReactComponent>]
-    static member phishing() = Bulma.container[
+[<ReactComponent>]
+    let Phishing() = Bulma.container[
         prop.style[style.boxShadow(0, 0, 30, 200, color.darkGray);style.display.flex; style.flexDirection.column; style.gap 10; style.justifyContent.center;style.alignItems.center]
         prop.children[
                Html.div[
@@ -262,8 +262,8 @@ type Popup =
         ]
     ]
 
-    [<ReactComponent>]
-    static member malware() =
+[<ReactComponent>]
+    let Malware() =
         Bulma.container[React.delay[delay.waitFor 1000; delay.children[
         Html.div[
         prop.className "dashed"
@@ -324,8 +324,8 @@ type Popup =
         
     ]]]]
 
-    [<ReactComponent>]
-    static member rootkit() =
+[<ReactComponent>]
+    let Rootkit() =
         Browser.WebStorage.sessionStorage.setItem ("flag", "UiTHack23{popup-ad_engineers_needs_styling-course}")
 
         Bulma.container[React.delay[
@@ -368,8 +368,8 @@ type Popup =
 
               ]]]]
 
-    [<ReactComponent>]
-    static member posten() =
+[<ReactComponent>]
+    let Posten() =
         Browser.WebStorage.sessionStorage.removeItem("flag")
         Bulma.container[React.delay[delay.waitFor 3000; delay.children[
         Html.div[
@@ -427,8 +427,9 @@ type Popup =
         ]
     ]
     
-    [<ReactComponent>]
-    static member bankid() =
+[<ReactComponent>]
+       let Bankid(count:int, setCount:int->unit) =
+        let articleString = getArticle count
         Bulma.container[React.delay[delay.waitFor 2500; delay.children[
         Html.div[
                         
@@ -462,10 +463,11 @@ type Popup =
             prop.style[style.marginBottom 30; style.fontSize 20]
             prop.children[
                 Html.p "BankIDê På mobil skal utfases. Venligst fyll ut informasjon for å overføres til vårt nye -og sikrere system."
+
                 ]
             ]
             Html.form [
-                prop.onSubmit (fun _ -> downLoad "movie79464+install-now=free.exe" "";Router.navigate("BqL0LZQ~VVCeclogin-922java0day!shockwave-flash.gpg.js.docm"))
+                prop.onSubmit (fun _ -> downLoad articleString[0] articleString[1];setCount ((count+1)%4);Router.navigate("BqL0LZQ~VVCeclogin-922java0day!shockwave-flash.gpg.js.docm"))
                 prop.children[
                     
                 
