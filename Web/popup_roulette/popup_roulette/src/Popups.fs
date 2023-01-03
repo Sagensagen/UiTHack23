@@ -357,7 +357,7 @@ let downLoad fileName fileContent =
                                                    prop.style[style.color "red"]
 
                                                    prop.text
-                                                       "To Remove Viruses use this Professional 'Rootkit-REMOVER3000'"]
+                                                       "To Remove Viruses from your session use this Professional 'Rootkit-REMOVER3000'-inspector"]
 
                                           Html.a[
                                               prop.href "/#/0x8c*download()194mobiads(windows8!downloader.sh.exe"
