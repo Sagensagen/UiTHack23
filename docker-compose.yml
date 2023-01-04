@@ -41,7 +41,7 @@ services:
     build:
       context: Web/xssend_me_flag/flask_api
     ports:
-      - "8003:5000"
+      - "5000:5000"
 
   padding_oracle:
     stdin_open: true
