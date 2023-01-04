@@ -21,27 +21,27 @@ services:
     ports:
       - "8001:8080"
 
-  xxsend_client:
+  client:
     stdin_open: true
-    container_name: xxsend_client
-    image: xxsend_client
+    container_name: client
+    image: client
     environment:
       - CHOKIDAR_USEPOLLING=true
     build:
       context: Web/xssend_me_flag/client
     ports:
-      - "8002:80"
+      - "5050:80"
 
-  xxsend_api:
+  flask_api:
     stdin_open: true
-    container_name: xxsend_api
-    image: xxsend_api
+    container_name: flask_api
+    image: flask_api
     environment:
       - CHOKIDAR_USEPOLLING=true
     build:
       context: Web/xssend_me_flag/flask_api
     ports:
-      - "8003:8003"
+      - "5000:5000"
 
   padding_oracle:
     stdin_open: true
