@@ -32,6 +32,7 @@ services:
     ports:
       - "8002:80"
 
+  # Ikke rør denne porten! 5000:5000
   flask_api:
     stdin_open: true
     container_name: flask_api
