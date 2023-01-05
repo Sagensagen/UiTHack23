@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="70px" viewBox="0 0 91 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Action_button</title>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#A6A7A2" offset="0%"></stop>
+            <stop stop-color="#F3F3F1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.03" offset="100%"></stop>
+        </linearGradient>
+        <path d="M44.9225194,24.9432317 C68.6155352,24.9432317 89.1337891,11.9846515 89.1337891,5.16393485 C89.1337891,-1.65678181 68.6155352,0.243231723 44.9225194,0.243231723 C21.2295037,0.243231723 -1.42108547e-14,-1.65678181 -1.42108547e-14,5.16393485 C-1.42108547e-14,11.9846515 21.2295037,24.9432317 44.9225194,24.9432317 Z" id="path-3"></path>
+        <filter x="-3.7%" y="-13.2%" width="107.4%" height="126.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="1" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.82745098   0 0 0 0 0.831372549   0 0 0 0 0.784313725  0 0 0 1 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner2"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner2" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.933753189   0 0 0 0 0.933753189   0 0 0 0 0.933753189  0 0 0 1 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner3"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner3" result="shadowOffsetInner3"></feOffset>
+            <feComposite in="shadowOffsetInner3" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner3"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner3" result="shadowMatrixInner3"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner3"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="008---404-page-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NOKIA-3310-Product-Design" transform="translate(-595.000000, -307.000000)">
+            <g id="Action_button" transform="translate(596.000000, 308.000000)">
+                <g id="Action-Button">
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use stroke="#424242" stroke-width="1.56" xlink:href="#path-3"></use>
+                </g>
+                <path d="M26.1821268,10.8757462 C25.3357424,10.5772956 24.8915543,9.64922346 25.1900049,8.80283906 C25.4884555,7.95645466 26.4165277,7.51226657 27.2629121,7.8107172 C31.5484964,9.32189264 37.8614772,10.2211285 44.6742815,10.2211285 C50.79652,10.2211285 56.5274023,9.49633834 60.7648876,8.23793458 C61.137665,8.12723108 61.4969295,8.01290616 61.8419075,7.89524423 C62.6913232,7.6055334 63.6147677,8.05926381 63.9044785,8.90867947 C64.1941893,9.75809514 63.7404589,10.6815396 62.8910433,10.9712504 C62.5043936,11.1031253 62.1038431,11.2305883 61.6901025,11.3534566 C57.1306544,12.7074735 51.0924694,13.4711285 44.6742815,13.4711285 C37.518105,13.4711285 30.8480215,12.5210261 26.1821268,10.8757462 Z" id="Action-Button---Foreground" fill="#63AEC1" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
