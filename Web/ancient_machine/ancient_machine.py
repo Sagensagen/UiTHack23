@@ -1,6 +1,5 @@
 import json
 from datetime import datetime
-from itertools import groupby
 
 from flask import Flask, request, jsonify
 from flask_apscheduler import APScheduler
@@ -67,4 +66,4 @@ if (__name__ == "__main__"):
     scheduler.add_job(func=clear_password,
                       trigger='interval', id='job', seconds=1)
     scheduler.start()
-    app.run(debug=True)
+    app.run(debug=True, port=8012)
