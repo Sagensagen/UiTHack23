@@ -1,6 +1,6 @@
 import json
 from datetime import datetime
-
+import os
 from flask import Flask, request, jsonify
 from flask_apscheduler import APScheduler
 
@@ -66,4 +66,6 @@ if (__name__ == "__main__"):
     scheduler.add_job(func=clear_password,
                       trigger='interval', id='job', seconds=1)
     scheduler.start()
-    app.run(debug=True, port=8012)
+    port = int(os.environ.get('PORT', 5000))
+
+    app.run(debug=True, host='0.0.0.0', port=port)

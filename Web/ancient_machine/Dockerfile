@@ -7,15 +7,14 @@ FROM python:3.9-slim-buster
 WORKDIR /app
 COPY ./requirements.txt /app
 RUN pip install -r requirements.txt
+RUN pip install Flask-APScheduler
 COPY . .
 
-EXPOSE 8012
-ENV FLASK_APP=api.py
-
+ENV FLASK_APP=ancient_machine.py
 
 
 ENTRYPOINT ["python"]
-CMD ["api.py"]
+CMD ["ancient_machine.py"]
 
 
 # CMD ["flask", "run", "--host", "0.0.0.0"]
