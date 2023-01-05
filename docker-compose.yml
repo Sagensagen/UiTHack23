@@ -1,126 +1,126 @@
 version: "3.8"
 
 services:
-  client:
-    stdin_open: true
-    container_name: client
-    image: client
-    environment:
-      - CHOKIDAR_USEPOLLING=true
-    build:
-      context: Web/xssend_me_flag/client
-    ports:
-      - "5050:80"
+  # client:
+  #   stdin_open: true
+  #   container_name: client
+  #   image: client
+  #   environment:
+  #     - CHOKIDAR_USEPOLLING=true
+  #   build:
+  #     context: Web/xssend_me_flag/client
+  #   ports:
+  #     - "5050:80"
 
-  flask_api:
-    stdin_open: true
-    container_name: flask_api
-    image: flask_api
-    environment:
-      - CHOKIDAR_USEPOLLING=true
-    build:
-      context: Web/xssend_me_flag/flask_api
-    ports:
-      - "5000:5000"
+  # flask_api:
+  #   stdin_open: true
+  #   container_name: flask_api
+  #   image: flask_api
+  #   environment:
+  #     - CHOKIDAR_USEPOLLING=true
+  #   build:
+  #     context: Web/xssend_me_flag/flask_api
+  #   ports:
+  #     - "5000:5000"
 
-  cronjob:
-    stdin_open: true
-    container_name: cronjob
-    image: cronjob
-    environment:
-      - CHOKIDAR_USEPOLLING=true
-    build:
-      context: Web/xssend_me_flag/cronjob
-    ports:
-      - "80:80"
+  # cronjob:
+  #   stdin_open: true
+  #   container_name: cronjob
+  #   image: cronjob
+  #   environment:
+  #     - CHOKIDAR_USEPOLLING=true
+  #   build:
+  #     context: Web/xssend_me_flag/cronjob
+  #   ports:
+  #     - "80:80"
 
-  padding_oracle:
-    stdin_open: true
-    container_name: padding_oracle
-    image: padding_oracle
-    environment:
-      - CHOKIDAR_USEPOLLING=true
-    build:
-      context: Crypto/padding_oracle/src
-    ports:
-      - "7777:7777"
+  # padding_oracle:
+  #   stdin_open: true
+  #   container_name: padding_oracle
+  #   image: padding_oracle
+  #   environment:
+  #     - CHOKIDAR_USEPOLLING=true
+  #   build:
+  #     context: Crypto/padding_oracle/src
+  #   ports:
+  #     - "7777:7777"
 
-  wizardry:
-    stdin_open: true
-    container_name: wizardry
-    image: wizardry
-    environment:
-      - CHOKIDAR_USEPOLLING=true
-    build:
-      context: Pwn/wizardry/src
-    ports:
-      - "6200:6200"
+  # wizardry:
+  #   stdin_open: true
+  #   container_name: wizardry
+  #   image: wizardry
+  #   environment:
+  #     - CHOKIDAR_USEPOLLING=true
+  #   build:
+  #     context: Pwn/wizardry/src
+  #   ports:
+  #     - "6200:6200"
 
-  mp3_player:
-    stdin_open: true
-    container_name: mp3_player
-    image: mp3_player
-    environment:
-      - CHOKIDAR_USEPOLLING=true
-    build:
-      context: Pwn/mp3_player/src
-    ports:
-      - "6100:6100"
+  # mp3_player:
+  #   stdin_open: true
+  #   container_name: mp3_player
+  #   image: mp3_player
+  #   environment:
+  #     - CHOKIDAR_USEPOLLING=true
+  #   build:
+  #     context: Pwn/mp3_player/src
+  #   ports:
+  #     - "6100:6100"
 
-  bypass:
-    stdin_open: true
-    container_name: bypass
-    image: bypass
-    environment:
-      - CHOKIDAR_USEPOLLING=true
-    build:
-      context: Web/bypass/src
-    ports:
-      - "5100:5100"
+  # bypass:
+  #   stdin_open: true
+  #   container_name: bypass
+  #   image: bypass
+  #   environment:
+  #     - CHOKIDAR_USEPOLLING=true
+  #   build:
+  #     context: Web/bypass/src
+  #   ports:
+  #     - "5100:5100"
 
-  ollivanders:
-    stdin_open: true
-    container_name: ollivanders
-    image: ollivanders
-    environment:
-      - CHOKIDAR_USEPOLLING=true
-    build:
-      context: Pwn/ollivanders/src
-    ports:
-      - "6300:6300"
+  # ollivanders:
+  #   stdin_open: true
+  #   container_name: ollivanders
+  #   image: ollivanders
+  #   environment:
+  #     - CHOKIDAR_USEPOLLING=true
+  #   build:
+  #     context: Pwn/ollivanders/src
+  #   ports:
+  #     - "6300:6300"
 
-  tamagotchi:
-    stdin_open: true
-    container_name: tamagotchi
-    image: tamagotchi
-    environment:
-      - CHOKIDAR_USEPOLLING=true
-    build:
-      context: Pwn/tamagotchi/src
-    ports:
-      - "6400:6400"
+  # tamagotchi:
+  #   stdin_open: true
+  #   container_name: tamagotchi
+  #   image: tamagotchi
+  #   environment:
+  #     - CHOKIDAR_USEPOLLING=true
+  #   build:
+  #     context: Pwn/tamagotchi/src
+  #   ports:
+  #     - "6400:6400"
 
-  so_you_think_you_can_math:
-    stdin_open: true
-    container_name: so_you_think_you_can_math
-    image: so_you_think_you_can_math
-    environment:
-      - CHOKIDAR_USEPOLLING=true
-    build:
-      context: Misc/so_you_think_you_can_math/src
-    ports:
-      - "8100:8100"
-        
-  popup_roulette:
-    stdin_open: true
-    container_name: popup-roulette
-    image: popup-roulette
-    environment:
-      - CHOKIDAR_USEPOLLING=true
-    build:
-      context: Web/popup_roulette/popup_roulette
-    ports:
-      - "8900:8900"
+  # so_you_think_you_can_math:
+  #   stdin_open: true
+  #   container_name: so_you_think_you_can_math
+  #   image: so_you_think_you_can_math
+  #   environment:
+  #     - CHOKIDAR_USEPOLLING=true
+  #   build:
+  #     context: Misc/so_you_think_you_can_math/src
+  #   ports:
+  #     - "8100:8100"
+
+  # popup_roulette:
+  #   stdin_open: true
+  #   container_name: popup-roulette
+  #   image: popup-roulette
+  #   environment:
+  #     - CHOKIDAR_USEPOLLING=true
+  #   build:
+  #     context: Web/popup_roulette/popup_roulette
+  #   ports:
+  #     - "8900:8900"
 
   nokia:
     container_name: nokia
@@ -130,6 +130,5 @@ services:
       dockerfile: Containerfile
     ports:
       - "8001:8080"
-  
 # sudo docker compose up --build -d
 # sudo docker compose down

@@ -1,0 +1,68 @@
+.screen {
+    z-index: 3;
+    grid-area: overlap;
+}
+
+.screenDiv {
+    z-index: 3;
+    word-wrap: break-word;
+    width: 184px;
+    position: relative;
+    height: 134px;
+    top: 80px;
+    left: 25px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.screenDiv::-webkit-scrollbar {
+    display: none;
+}
+
+.screenText {
+    z-index: 3;
+    grid-area: overlap;
+    font-family: nokiafc22;
+}
+
+.callBtnContainer {
+    z-index: 3;
+    grid-area: overlap;
+    position: relative;
+    top: 120px;
+    right: 60px;
+}
+
+.upDownBtnContainer {
+    z-index: 3;
+    grid-area: overlap;
+    position: relative;
+    top: 50px;
+    left: 130px;
+}
+
+.upDownBtnImg {
+    z-index: 3;
+    grid-area: overlap;
+}
+
+.upBtn {
+    z-index: 3;
+    grid-area: overlap;
+    position: relative;
+    bottom: 10px;
+    right: 60px;
+}
+
+.downBtn {
+    z-index: 3;
+    grid-area: overlap;
+    position: relative;
+    top: 10px;
+    right: 150px;
+}
+
+@font-face {
+    font-family: "nokiafc22";
+    src: local("nokiafc22"), url("../../fonts/nokiafc22.ttf") format("truetype")
+}
