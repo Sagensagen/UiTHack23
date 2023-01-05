@@ -1,0 +1,17 @@
+[package]
+name = "nokia"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = { version = "0" }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1" }
+tokio = { version = "1", features = ["full"] }
+tower = { version = "0" }
+tower-http = { version = "0", features = ["trace"] }
+tracing = { version = "0" }
+tracing-subscriber = { version = "0", features = ["json", "ansi", "env-filter", "std"] }
+uuid = { version = "1", features = ["v4", "fast-rng", "serde"] }

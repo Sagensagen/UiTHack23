@@ -9,10 +9,11 @@ RUN apt-get install -y socat
 # User
 RUN adduser --disabled-password --gecos "" mp3
 
+RUN chown -R root:root /home/mp3
 COPY mp3_player /home/mp3
 COPY flag.txt /home/mp3
-RUN chmod 555 /home/mp3/mp3_player
-RUN chmod 555 /home/mp3/flag.txt
+RUN chmod 755 /home/mp3/mp3_player
+RUN chmod 755 /home/mp3/flag.txt
 
 USER mp3
 WORKDIR /home/mp3
