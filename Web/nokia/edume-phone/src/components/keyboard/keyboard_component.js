@@ -17,6 +17,7 @@ import Action_btn from "../../images/nokia/nokia_actionBtn.svg";
 import "./keyboard_component.css";
 import { useEffect, useState, useRef } from "react";
 
+const URL = "http://localhost:8001/";
 const one = ["1"];
 const two = ["2", "A", "B", "C"];
 const three = ["3", "D", "E", "F"];
@@ -67,29 +68,39 @@ export default function NumberKeyPad() {
   };
 
   const getNewMsgId = async () => {
-    fetch("http://localhost:8001/message/new")
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("ID", data.message_id);
-        sendBtnVal("2", data.message_id);
-        setMsgId(data.message_id);
-      });
+    const Msgresponse = await fetch(URL+"message/new")
+    const BtnResponse = await fetch(URL+"button/2",{mode: "no-cors",method: "POST",headers: {"Content-Type": "application/json"},body: JSON.stringify({ message_id: Msgresponse.message_id})})
+    setMsgId(Msgresponse.message_id)
+    console.log(BtnResponse.status)
+
+
+    // .then((response) => response.json())
+      // .then((data) => {
+      //   console.log("ID", data.message_id);
+      //   sendBtnVal("2", data.message_id);
+      //   setMsgId(data.message_id);
+      // });
+      // const json = await response;
+      // console.log(json)
+      // setMsgId(json.message_id)
+      // sendBtnVal("2", json.message_id);
   };
 
-  const sendBtnVal = async (btnId, id) => {
-    console.log("insidebtn", id);
-    const url = "http://localhost:8001/button/2";
-    const data = { message_id: msgId };
-    const response = await fetch(url, {
-      mode: "no-cors",
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
-    // const json = await response.json();
-  };
+  // const sendBtnVal = async (btnId, id) => {
+  //   console.log("insideBtn", id);
+  //   const url = URL+"button/2";
+  //   const data = { message_id: msgId };
+  //   console.log(data)
+  //   const response = await fetch(url, {
+  //     mode: "no-cors",
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(data),
+  //   });
+  //   console.log(response.status)
+  // };
 
   const validateBtn = (btnVal) => {
     if (currentActiveBtn === null) {
@@ -129,11 +140,12 @@ export default function NumberKeyPad() {
     resetTimeout(btnVal);
 
     if (msgId === null) {
-      getNewMsgId().then(validateBtn(btnVal));
-      sendBtnVal("2");
+      getNewMsgId()
+      validateBtn(btnVal)
+      // sendBtnVal("2");
     } else {
       validateBtn(btnVal);
-      sendBtnVal("2", 2);
+      // sendBtnVal("2", 2);
     }
   };
 
