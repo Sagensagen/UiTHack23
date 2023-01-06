@@ -17,7 +17,7 @@ import Action_btn from "../../images/nokia/nokia_actionBtn.svg";
 import "./keyboard_component.css";
 import { useEffect, useState, useRef } from "react";
 
-const URL = "http://localhost:8001/";
+const URL = "http://motherload.td.uit.no:8001/";
 const one = ["1"];
 const two = ["2", "A", "B", "C"];
 const three = ["3", "D", "E", "F"];
@@ -68,10 +68,14 @@ export default function NumberKeyPad() {
   };
 
   const getNewMsgId = async () => {
-    const Msgresponse = await fetch(URL+"message/new")
-    const BtnResponse = await fetch(URL+"button/2",{mode: "no-cors",method: "POST",headers: {"Content-Type": "application/json"},body: JSON.stringify({ message_id: Msgresponse.message_id})})
+    const Msgresponse = await fetch("http://motherload.td.org.uit.no:8001/message/new")
+    console.log(Msgresponse)
+    const json = await Msgresponse.json();
+    const BtnResponse = await fetch("http://motherload.td.org.uit.no:8001/button/2",{method: "POST",headers: {"Content-Type": "application/json"},body: JSON.stringify({ message_id: json.message_id})})
     setMsgId(Msgresponse.message_id)
-    console.log(BtnResponse.status)
+    console.log(json.message_id)
+    console.log("test",JSON.stringify({ message_id: json.message_id}))
+    console.log(BtnResponse)
 
 
     // .then((response) => response.json())
