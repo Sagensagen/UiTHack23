@@ -8,7 +8,7 @@ import Call_btn from "../../images/nokia/call_btn.svg";
 import "./screen_componet.css";
 import "../../fonts/nokiafc22.ttf";
 
-export default function ScreenComponent({ text }) {
+export default function ScreenComponent({ text, sendMsg}) {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function ScreenComponent({ text }) {
         justify="center"
         alignItems="center"
       >
-        <Button size="small">
+        <Button size="small" onClick={() => sendMsg()}>
           <img alt="" src={Call_btn} />{" "}
         </Button>
       </Grid>
