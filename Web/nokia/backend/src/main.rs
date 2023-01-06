@@ -146,7 +146,7 @@ async fn message_send(
         msg.confirm_key();
     }
 
-    if msg.data == "hello there" {
+    if msg.data == "aaa" {
         Ok((StatusCode::OK, "UiTHack22{this_could_be_a_key}".to_string()))
     } else {
         Err((
