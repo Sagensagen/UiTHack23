@@ -41,7 +41,7 @@ def attempt_connection():
             START = -1
             END = -1
             password.clear()
-            return jsonify({'key': 'you-found-the-flag'})
+            return jsonify({'key': 'UiTHack23{that-was-really-fast-god-damn}'})
         elif (END - START) >= 1:
             START = -1
             END = -1

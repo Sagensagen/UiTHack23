@@ -11,21 +11,20 @@ Repository for the yearly CTF challenge by UiT students
 ## Challenges
 
 Add emoji!
-| Noob      | Web | Pwn      |  Misc | Rev_Eng  | Crypto| IRL |
+| Noob | Web | Pwn | Misc | Rev_Eng | Crypto| IRL |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 |cat flag 🐈‍⬛ | Bypass :passport_control: |Mp3 Player :notes: | So you think you can math :triangular_ruler: | Forrest :deciduous_tree: | Hotel Caesar :hotel: | ARP poisoning :test_tube: |
 |Navigate 🧭|Popup Roulette :warning: | Ollivanders :dollar: | Word 1.1 💾 | |Padding Oracle :crystal_ball: | |
-|scp+unzip*2 🤐| Xss98 :flags:| Wizardry :zap: | | Fresh Coffee :coffee: | | |
-|Moms spaghetti 🍝|| | | Pokemon Battle :baseball: | | |
+|scp+unzip\*2 🤐| Xss98 :flags:| Wizardry :zap: | | Fresh Coffee :coffee: | | |
+|Moms spaghetti 🍝|Petes ancient machine 🧭| | | Pokemon Battle :baseball: | | |
 |Get served :shipit:| | Tamagotchi :cow: | | Pokemon Battle V2 :8ball: | Code Page 📟 | |
-
 
 # Developer guidelines
 
-1. Create a new issue for a task. Use tags to indicate category and difficulty(**points)
-2. Add the issue to the project structure [here](https://github.com/users/Sagensagen/projects/1/views/2)  and assign it to your self.
+1. Create a new issue for a task. Use tags to indicate category and difficulty(\*\*points)
+2. Add the issue to the project structure [here](https://github.com/users/Sagensagen/projects/1/views/2) and assign it to your self.
 3. Pull/fetch from master.
-4. Create a new branch for the specific task/issue `git checkout -b issueName` from master. (*Remeber du pull/fetch)
+4. Create a new branch for the specific task/issue `git checkout -b issueName` from master. (\*Remeber du pull/fetch)
 5. When task created commit it `git add *` `git commit -m "Insert description and alot of emojies like this :rocket: :fire:"`
 6. Push branch `git push --set-upstream origin issueName`
 7. Create a pull request to merge, and another member is required to overlook the code to merge it to master
