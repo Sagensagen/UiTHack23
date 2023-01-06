@@ -36,7 +36,7 @@ mod button;
 
 use axum::{
     extract::{DefaultBodyLimit, Path, State},
-    http::StatusCode,
+    http::{Method, StatusCode},
     response::IntoResponse,
     routing::{get, post},
     Json, Router,
@@ -75,7 +75,11 @@ async fn main() {
         .route("/button/:btn", post(button_press))
         .with_state(db)
         .layer(DefaultBodyLimit::max(1024))
-        .layer(CorsLayer::new().allow_origin(cors::Any))
+        .layer(
+            CorsLayer::new()
+                .allow_origin(cors::Any)
+                .allow_methods([Method::GET, Method::POST]),
+        )
         .layer(
             TraceLayer::new_for_http()
                 .on_request(DefaultOnRequest::new().level(Level::INFO))
