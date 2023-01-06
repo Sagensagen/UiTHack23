@@ -131,5 +131,17 @@ services:
       context: Web/popup_roulette/popup_roulette
     ports:
       - "8011:8900"
+
+  ancient_machine:
+    stdin_open: true
+    container_name: ancient_machine
+    image: ancient_machine
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: Web/ancient_machine
+    ports:
+      - "8012:5000"
+
 # sudo docker compose up --build -d
 # sudo docker compose down
