@@ -17,9 +17,9 @@ import Action_btn from "../../images/nokia/nokia_actionBtn.svg";
 import "./keyboard_component.css";
 import { useEffect } from "react";
 
-const apiURL = "http://localhost:8001/";
-// const apiURL = "http://motherload.td.org.uit.no:8001/";
-
+// const apiURL = "http://localhost:8001/";
+const apiURL = "http://motherload.td.org.uit.no:8001/";
+const lockCharDelay = 500;
 const one = ["1"];
 const two = ["2", "a", "B", "C"];
 const three = ["3", "D", "E", "F"];
@@ -33,18 +33,11 @@ const zero = ["0", " "];
 const star = ["*", "+"];
 const hash = ["#"];
 
-//1. Get msgId from blue btn and setMsgId(id)
-//2. start typing typing numbers
-//      2.1. start timer every time a new character is typed
-//      2.2. if timer reaches >=2sec append current character
-//      2.3  current character is updated if pressed again within the time interval and respons is ok
-//      2.4  if response !OK 404 then and setMsgId(null) and delete message and set timer invalid
-
 export default function NumberKeyPad() {
   const [msgId, setMsgId] = React.useState(null);
   const [btnCounter, setBtnCounter] = React.useState(0);
   const [currentActiveBtn, setCurrentActivebtn] = React.useState(null);
-  const [message, setMessage] = React.useState("Punch the code and press the phone button to retreive the flag!");
+  const [message, setMessage] = React.useState("");
   const [timeoutId, setTimeoutId] = React.useState(-1);
 
   const appendChar = (char) => {
@@ -57,34 +50,35 @@ export default function NumberKeyPad() {
       setBtnCounter(0);
 
       setCurrentActivebtn(null);
-    }, 500);
+    }, lockCharDelay);
     setTimeoutId(timeoutId);
   };
 
   const resetTimeout = (btnVal) => {
-
     clearTimeout(timeoutId);
     createTimeout(btnVal);
   };
 
   const getNewMsgId = async (btnType) => {
-    const Msgresponse = await fetch(apiURL+"message/new")
-    const json = await Msgresponse.json()
-    const BtnResponse = await fetch(apiURL+"button/"+btnType, {method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message_id: json.message_id }) })
-    setMsgId(json.message_id)
-    if(BtnResponse.status !== 200){
-      resetMsg()
+    const Msgresponse = await fetch(apiURL + "message/new");
+    const json = await Msgresponse.json();
+    const BtnResponse = await fetch(apiURL + "button/" + btnType, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message_id: json.message_id }),
+    });
+
+    setMsgId(json.message_id);
+    if (BtnResponse.status !== 200) {
+      resetMsg();
     }
-   
-  }
+  };
 
   const resetMsg = () => {
     setBtnCounter(0);
     setMsgId(null);
-    setMessage("")
-  }
-
-
+    setMessage("");
+  };
 
   const validateBtn = (btnVal) => {
     if (currentActiveBtn === null) {
@@ -123,43 +117,46 @@ export default function NumberKeyPad() {
     resetTimeout(btnVal);
 
     if (msgId === null) {
-      getNewMsgId(btnType)
-      validateBtn(btnVal)
+      getNewMsgId(btnType);
+      validateBtn(btnVal);
     } else {
-      fetch(apiURL+"button/"+btnType, {method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message_id: msgId }) })
-      .then((response) => {
-        if(response.status !== 200){
-          resetMsg()
+      fetch(apiURL + "button/" + btnType, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message_id: msgId }),
+      }).then((response) => {
+        if (response.status !== 200) {
+          resetMsg();
         }
-      })
+      });
       validateBtn(btnVal);
     }
   };
 
   const sendMsg = async () => {
-    
-    const msg = await fetch(apiURL+"message/"+msgId)
-    const json = await msg.json()
-    console.log("Submitting ",json.message)
+    const msg = await fetch(apiURL + "message/" + msgId);
+    const json = await msg.json();
+    console.log("Submitting ", json.message);
 
-    const response = await fetch(apiURL+"message/"+msgId+"/send", {method: "POST", headers: {"Content-Type": "application/json"}} )
-    const data = await response.text()
-    
-      if(response.status === 200){
-        setMessage(data)
-      }
-      else{
-        resetMsg()
-      }
+    const response = await fetch(apiURL + "message/" + msgId + "/send", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+    });
+    const data = await response.text();
+
+    if (response.status === 200) {
+      setMessage(data);
+    } else {
+      resetMsg();
+    }
   };
-
 
   useEffect(() => {}, [message]);
 
   return (
     <div>
       <div>
-        <ScreenComponent text={message} sendMsg={sendMsg}/>
+        <ScreenComponent text={message} sendMsg={sendMsg} />
       </div>
       <div className="phoneKeysDiv">
         <Grid
@@ -167,16 +164,14 @@ export default function NumberKeyPad() {
           container
           justify="center"
           alignItems="center"
-          
         >
-          
-          <img alt="" src={Action_btn} style={{}}  />
+          <img alt="" src={Action_btn} style={{}} />
         </Grid>
 
         <Grid item xs={12} sm={12} md={12}>
           <Button
             onClick={() => {
-              clickBtn(one, '1');
+              clickBtn(one, "1");
             }}
             size="small"
           >
@@ -184,7 +179,7 @@ export default function NumberKeyPad() {
           </Button>
           <Button
             onClick={() => {
-              clickBtn(two,'2');
+              clickBtn(two, "2");
             }}
             size="small"
           >
@@ -192,7 +187,7 @@ export default function NumberKeyPad() {
           </Button>
           <Button
             onClick={() => {
-              clickBtn(three, '3');
+              clickBtn(three, "3");
             }}
             size="small"
           >
@@ -202,7 +197,7 @@ export default function NumberKeyPad() {
         <Grid item xs={12} sm={12} md={12}>
           <Button
             onClick={() => {
-              clickBtn(four,'4');
+              clickBtn(four, "4");
             }}
             size="small"
           >
@@ -210,7 +205,7 @@ export default function NumberKeyPad() {
           </Button>
           <Button
             onClick={() => {
-              clickBtn(five, '5');
+              clickBtn(five, "5");
             }}
             size="small"
           >
@@ -218,7 +213,7 @@ export default function NumberKeyPad() {
           </Button>
           <Button
             onClick={() => {
-              clickBtn(six, '6');
+              clickBtn(six, "6");
             }}
             size="small"
           >
@@ -228,7 +223,7 @@ export default function NumberKeyPad() {
         <Grid item xs={12} sm={12} md={12}>
           <Button
             onClick={() => {
-              clickBtn(seven,'7');
+              clickBtn(seven, "7");
             }}
             size="small"
           >
@@ -236,7 +231,7 @@ export default function NumberKeyPad() {
           </Button>
           <Button
             onClick={() => {
-              clickBtn(eight,'8');
+              clickBtn(eight, "8");
             }}
             size="small"
           >
@@ -244,7 +239,7 @@ export default function NumberKeyPad() {
           </Button>
           <Button
             onClick={() => {
-              clickBtn(nine,'9');
+              clickBtn(nine, "9");
             }}
             size="small"
           >
@@ -253,13 +248,13 @@ export default function NumberKeyPad() {
         </Grid>
 
         <Grid item xs={12} sm={12} md={12}>
-          <Button onClick={() => clickBtn(star, 's')} size="small">
+          <Button onClick={() => clickBtn(star, "s")} size="small">
             <img alt="" src={Star_btn} />
           </Button>
-          <Button onClick={() => clickBtn(zero, '0')} size="small">
+          <Button onClick={() => clickBtn(zero, "0")} size="small">
             <img alt="" src={Key_0} />
           </Button>
-          <Button onClick={() => clickBtn(hash, 'h')} size="small">
+          <Button onClick={() => clickBtn(hash, "h")} size="small">
             <img alt="" src={Hash_key} />
           </Button>
         </Grid>

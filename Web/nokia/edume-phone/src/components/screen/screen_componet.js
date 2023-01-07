@@ -1,6 +1,5 @@
 import { Grid, Typography, Button } from "@material-ui/core";
-import React, { useState, useEffect, useRef } from "react";
-import convertWords from "../../api/convertWords";
+import React, { useState, useEffect } from "react";
 import UpDown_btn from "../../images/nokia/up_down_btn.svg";
 import Up_icon from "../../images/nokia/up_icon.svg";
 import Down_icon from "../../images/nokia/down_icon.svg";
@@ -8,7 +7,7 @@ import Call_btn from "../../images/nokia/call_btn.svg";
 import "./screen_componet.css";
 import "../../fonts/nokiafc22.ttf";
 
-export default function ScreenComponent({ text, sendMsg}) {
+export default function ScreenComponent({ text, sendMsg }) {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
