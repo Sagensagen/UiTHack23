@@ -12,12 +12,21 @@ services:
     ports:
       - "80:80"
 
-  nokia:
-    container_name: nokia
-    image: nokia
+  nokia_client:
+    container_name: nokia_client
+    image: nokia_client
     build:
       context: Web/nokia
-      dockerfile: Containerfile
+      dockerfile: Dockerfile_frontend
+    ports:
+      - "8000:80"
+
+  nokia_api:
+    container_name: nokia_api
+    image: nokia_api
+    build:
+      context: Web/nokia
+      dockerfile: Dockerfile_backend
     ports:
       - "8001:8080"
 

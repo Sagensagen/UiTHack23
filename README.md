@@ -17,7 +17,8 @@ Add emoji!
 |Navigate 🧭|Popup Roulette :warning: | Ollivanders :dollar: | Word 1.1 💾 | |Padding Oracle :crystal_ball: | |
 |scp+unzip\*2 🤐| Xss98 :flags:| Wizardry :zap: | Gangsta's messed up paradise :microphone: | Fresh Coffee :coffee: | | |
 |Moms spaghetti 🍝|Petes ancient machine 🧭| | | Pokemon Battle :baseball: | | |
-|Get served :shipit:| | Tamagotchi :cow: | | Pokemon Battle V2 :8ball: | Code Page 📟 | |
+|Get served :shipit:|:iphone: Nokia 3310| Tamagotchi :cow: | | Pokemon Battle V2 :8ball: | Code Page 📟 | |
+
 
 # Developer guidelines
 
@@ -30,6 +31,22 @@ Add emoji!
 7. Create a pull request to merge, and another member is required to overlook the code to merge it to master
 8. Update issue/task status in project
 9. Add README for task
+
+# Servers & API
+
+### Noob challenges
+
+All noob challenges are set/to be set up on `wwww.limewire.td.org.uit.no`
+
+### Web challenges
+
+All web challenges are to be served on `motherload.td.org.uit.no`
+Each challenge is containerized and composed up on respective ports.
+
+### CTFd app
+
+CTFd is the application we are eusing to host the challenges and keep track of contestants/teams and scoreboards
+It will be served on `uithack.no` ---DNS---> `uithack.td.org.uit.no`
 
 # Resrouces
 

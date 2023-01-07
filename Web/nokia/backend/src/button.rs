@@ -1,14 +1,19 @@
 use axum::http::StatusCode;
 
-const BTN_2: [char; 3] = ['a', 'b', 'c'];
-const BTN_3: [char; 3] = ['d', 'e', 'f'];
-const BTN_4: [char; 3] = ['g', 'h', 'i'];
-const BTN_5: [char; 3] = ['j', 'k', 'l'];
-const BTN_6: [char; 3] = ['m', 'n', 'o'];
-const BTN_7: [char; 4] = ['p', 'q', 'r', 's'];
-const BTN_8: [char; 3] = ['t', 'u', 'v'];
-const BTN_9: [char; 4] = ['w', 'x', 'y', 'z'];
-const BTN_0: [char; 1] = [' '];
+const BTN_1: [char; 1] = ['1'];
+const BTN_2: [char; 4] = ['2','a', 'b', 'c'];
+const BTN_3: [char; 4] = ['3','d', 'e', 'f'];
+const BTN_4: [char; 4] = ['4','g', 'h', 'i'];
+const BTN_5: [char; 4] = ['5','j', 'k', 'l'];
+const BTN_6: [char; 4] = ['6','m', 'n', 'o'];
+const BTN_7: [char; 5] = ['7','p', 'q', 'r', 's'];
+const BTN_8: [char; 4] = ['8','t', 'u', 'v'];
+const BTN_9: [char; 5] = ['9','w', 'x', 'y', 'z'];
+const BTN_0: [char; 2] = ['0',' '];
+const BTN_S: [char; 2] = ['*','+'];
+const BTN_H: [char; 1] = ['#'];
+
+
 
 pub struct Button {
     name: char,
@@ -19,6 +24,7 @@ pub struct Button {
 impl Button {
     pub fn new(name: char) -> Result<Self, (StatusCode, String)> {
         let button: &[char] = match name {
+            '1' => &BTN_1,
             '2' => &BTN_2,
             '3' => &BTN_3,
             '4' => &BTN_4,
@@ -28,6 +34,8 @@ impl Button {
             '8' => &BTN_8,
             '9' => &BTN_9,
             '0' => &BTN_0,
+            's' => &BTN_S,
+            'h' => &BTN_H,
             _ => {
                 return Err((
                     StatusCode::NOT_FOUND,

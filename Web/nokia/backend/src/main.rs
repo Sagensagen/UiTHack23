@@ -36,7 +36,7 @@ mod button;
 
 use axum::{
     extract::{DefaultBodyLimit, Path, State},
-    http::StatusCode,
+    http::{Method, StatusCode},
     response::IntoResponse,
     routing::{get, post},
     Json, Router,
@@ -46,8 +46,11 @@ use serde::Deserialize;
 use serde_json::json;
 use std::{collections::HashMap, sync::Arc, time::Duration, time::Instant};
 use tokio::sync::RwLock;
-use tower_http::trace::{DefaultOnRequest, DefaultOnResponse, TraceLayer};
 use tower_http::LatencyUnit;
+use tower_http::{
+    cors::{self, CorsLayer},
+    trace::{DefaultOnRequest, DefaultOnResponse, TraceLayer},
+};
 use tracing::Level;
 use tracing_subscriber::{prelude::*, EnvFilter};
 use uuid::Uuid;
@@ -71,6 +74,13 @@ async fn main() {
         .route("/message/:id/send", post(message_send))
         .route("/button/:btn", post(button_press))
         .with_state(db)
+        .layer(DefaultBodyLimit::max(1024))
+        .layer(
+            CorsLayer::new()
+                .allow_origin(cors::Any)
+                .allow_methods([Method::GET, Method::POST])
+                .allow_headers(cors::Any),
+        )
         .layer(
             TraceLayer::new_for_http()
                 .on_request(DefaultOnRequest::new().level(Level::INFO))
@@ -79,8 +89,7 @@ async fn main() {
                         .level(Level::INFO)
                         .latency_unit(LatencyUnit::Micros),
                 ),
-        )
-        .layer(DefaultBodyLimit::max(1024));
+        );
 
     axum::Server::bind(&"0.0.0.0:8080".parse().unwrap())
         .serve(app.into_make_service())
@@ -137,8 +146,8 @@ async fn message_send(
         msg.confirm_key();
     }
 
-    if msg.data == "hello there" {
-        Ok((StatusCode::OK, "UiTHack22{this_could_be_a_key}".to_string()))
+    if msg.data == "uithack23 flag" {
+        Ok((StatusCode::OK, "UiTHack23{if_you_ever_feel_useless,remember_someone_made_a_protective_cover_for_Nokia3310}".to_string()))
     } else {
         Err((
             StatusCode::BAD_REQUEST,
