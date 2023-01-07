@@ -30,10 +30,10 @@ services:
     ports:
       - "8001:8080"
 
-  xxsend_client:
+  client:
     stdin_open: true
-    container_name: xxsend_client
-    image: xxsend_client
+    container_name: client
+    image: client
     environment:
       - CHOKIDAR_USEPOLLING=true
     build:
@@ -41,16 +41,17 @@ services:
     ports:
       - "8002:80"
 
-  xxsend_api:
+  # Ikke rør denne porten! 5000:5000
+  flask_api:
     stdin_open: true
-    container_name: xxsend_api
-    image: xxsend_api
+    container_name: flask_api
+    image: flask_api
     environment:
       - CHOKIDAR_USEPOLLING=true
     build:
       context: Web/xssend_me_flag/flask_api
     ports:
-      - "8003:8003"
+      - "5000:5000"
 
   padding_oracle:
     stdin_open: true
@@ -139,5 +140,17 @@ services:
       context: Web/popup_roulette/popup_roulette
     ports:
       - "8011:8900"
+
+  ancient_machine:
+    stdin_open: true
+    container_name: ancient_machine
+    image: ancient_machine
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: Web/ancient_machine
+    ports:
+      - "8012:5000"
+
 # sudo docker compose up --build -d
 # sudo docker compose down
