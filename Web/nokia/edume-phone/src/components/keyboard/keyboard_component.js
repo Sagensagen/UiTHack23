@@ -19,7 +19,7 @@ import { useEffect } from "react";
 
 // const apiURL = "http://localhost:8001/";
 const apiURL = "http://motherload.td.org.uit.no:8001/";
-const lockCharDelay = 500;
+const lockCharDelay = 600;
 const one = ["1"];
 const two = ["2", "a", "B", "C"];
 const three = ["3", "D", "E", "F"];
@@ -39,6 +39,7 @@ export default function NumberKeyPad() {
   const [currentActiveBtn, setCurrentActivebtn] = React.useState(null);
   const [message, setMessage] = React.useState("");
   const [timeoutId, setTimeoutId] = React.useState(-1);
+  const [errorMsg, setErrorMsg] = React.useState(null);
 
   const appendChar = (char) => {
     const str = message + char;
@@ -59,22 +60,17 @@ export default function NumberKeyPad() {
     createTimeout(btnVal);
   };
 
-  const getNewMsgId = async (btnType) => {
+  const getNewMsgId = async (btnType, btnVal) => {
     const Msgresponse = await fetch(apiURL + "message/new");
     const json = await Msgresponse.json();
-    const BtnResponse = await fetch(apiURL + "button/" + btnType, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message_id: json.message_id }),
-    });
-
     setMsgId(json.message_id);
-    if (BtnResponse.status !== 200) {
-      resetMsg();
-    }
   };
 
   const resetMsg = () => {
+    setErrorMsg("Error wrong code");
+    setTimeout(() => {
+      setErrorMsg(null);
+    }, 2000);
     setBtnCounter(0);
     setMsgId(null);
     setMessage("");
@@ -114,29 +110,37 @@ export default function NumberKeyPad() {
   };
 
   const clickBtn = (btnVal, btnType) => {
-    resetTimeout(btnVal);
-
     if (msgId === null) {
-      getNewMsgId(btnType);
-      validateBtn(btnVal);
-    } else {
-      fetch(apiURL + "button/" + btnType, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message_id: msgId }),
-      }).then((response) => {
-        if (response.status !== 200) {
-          resetMsg();
-        }
-      });
-      validateBtn(btnVal);
+      return;
+    }
+
+    resetTimeout(btnVal);
+    fetch(apiURL + "button/" + btnType, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message_id: msgId }),
+    }).then((response) => {
+      if (response.status !== 200) {
+        resetMsg();
+      }
+    });
+    validateBtn(btnVal);
+  };
+
+  const initMsg = () => {
+    if (msgId === null) {
+      getNewMsgId("init", one);
     }
   };
 
   const sendMsg = async () => {
+    if (msgId === null || message === "") {
+      initMsg();
+      return;
+    }
     const msg = await fetch(apiURL + "message/" + msgId);
     const json = await msg.json();
-    console.log("Submitting ", json.message);
+    console.log(json.message);
 
     const response = await fetch(apiURL + "message/" + msgId + "/send", {
       method: "POST",
@@ -156,7 +160,12 @@ export default function NumberKeyPad() {
   return (
     <div>
       <div>
-        <ScreenComponent text={message} sendMsg={sendMsg} />
+        <ScreenComponent
+          text={message}
+          sendMsg={sendMsg}
+          msgId={msgId}
+          errorMsg={errorMsg}
+        />
       </div>
       <div className="phoneKeysDiv">
         <Grid
