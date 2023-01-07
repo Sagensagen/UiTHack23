@@ -18,7 +18,7 @@ export default function ScreenComponent({ text, sendMsg, msgId, errorMsg }) {
     } else if (!bool && docs > 0) {
       setDocs(docs - 1);
     } else {
-      setDocs(0);
+      return;
     }
   };
 
@@ -38,12 +38,73 @@ export default function ScreenComponent({ text, sendMsg, msgId, errorMsg }) {
         )}
         {docs == 1 && (
           <Typography className="">
-            Instructions for sending messages
             <br />
+
+            <Typography variant="h5">Nokia 3310</Typography>
+            <br />
+            <br />
+
+            <Typography variant="h6">
+              Instructions for sending messages
+            </Typography>
             <ul>
-              <li>Press call button to initiate a ned message</li>
-              <li>Enter the message</li>
-              <li>Press call button to send the message</li>
+              <li>
+                <Typography variant="body2">
+                  Press call button to initiate a ned message
+                </Typography>
+              </li>
+              <li>
+                {" "}
+                <Typography variant="body2">Enter the message</Typography>
+              </li>
+              <li>
+                {" "}
+                <Typography variant="body2">
+                  Press call button to send the message
+                </Typography>
+              </li>
+            </ul>
+            <Typography variant="h6">In case of emergency</Typography>
+            <ul>
+              <li>
+                <Typography variant="body2">
+                  Throw the phone in self defence
+                </Typography>
+              </li>
+              <li>
+                <Typography variant="body2">
+                  Stab the threat with the phone
+                </Typography>
+              </li>
+              <li>
+                <Typography variant="body2">
+                  Hold the phone over your head indicating it will detonate a
+                  bomb, when actually it is a decoy. This will stun the threat
+                  making them withdraw
+                </Typography>
+              </li>
+            </ul>
+            <Typography variant="h6">
+              In case of modern social events
+            </Typography>
+            <ul>
+              <li>
+                <Typography variant="body2">
+                  Stare at the phone in silence
+                </Typography>
+              </li>
+              <li>
+                <Typography variant="body2">
+                  Touch and swipe the screen back and forth to blend in to the
+                  crowd
+                </Typography>
+              </li>
+              <li>
+                <Typography variant="body2">
+                  Only look up to navigate, and do not get eye contact with
+                  anyone
+                </Typography>
+              </li>
             </ul>
           </Typography>
         )}
@@ -90,7 +151,7 @@ export default function ScreenComponent({ text, sendMsg, msgId, errorMsg }) {
           className="downBtn"
           size="small"
           onClick={() => {
-            setDocs(() => handleDocs(false));
+            handleDocs(false);
           }}
         >
           <img alt="" src={Down_icon} />

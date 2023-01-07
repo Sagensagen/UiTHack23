@@ -146,8 +146,8 @@ async fn message_send(
         msg.confirm_key();
     }
 
-    if msg.data == "aaa" {
-        Ok((StatusCode::OK, "UiTHack22{this_could_be_a_key}".to_string()))
+    if msg.data == "uithack23 flag" {
+        Ok((StatusCode::OK, "UiTHack23{if_you_ever_feel_useless,remember_someone_made_a_protective_cover_for_Nokia3310}".to_string()))
     } else {
         Err((
             StatusCode::BAD_REQUEST,
