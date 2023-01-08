@@ -1,0 +1,4 @@
+
+uithack.no {
+	reverse_proxy ctfd:8000
+}

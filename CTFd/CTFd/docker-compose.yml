@@ -5,8 +5,6 @@ services:
     build: .
     user: root
     restart: always
-    ports:
-      - "8000:8000"
     environment:
       - UPLOAD_FOLDER=/var/uploads
       - DATABASE_URL=mysql+pymysql://ctfd:ctfd@db/ctfd
@@ -26,13 +24,17 @@ services:
         default:
         internal:
 
-  nginx:
-    image: nginx:stable
+  web:
+    image: docker.io/library/caddy:2-alpine
     restart: always
     volumes:
-      - ./conf/nginx/http.conf:/etc/nginx/nginx.conf
+      - "./conf/caddy/Caddyfile:/etc/caddy/Caddyfile"
+      - ".data/caddy:/data"
+      - "caddy-config:/config"
     ports:
-      - 80:80
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
     depends_on:
       - ctfd
 
@@ -63,3 +65,6 @@ networks:
     default:
     internal:
         internal: true
+
+volumes:
+  caddy-config:
