@@ -8,7 +8,7 @@
 >
 > You can connect to *Ollivanders* with
 > ```bash
-> $ nc motherload.td.org.uit.no 6300
+> $ nc motherload.td.org.uit.no 8008
 > ```
 
 ## Writeup

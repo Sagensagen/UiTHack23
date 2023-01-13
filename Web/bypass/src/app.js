@@ -7,7 +7,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-const port = 5100;
+const port = 8007;
 const adminCode = utils.generateCode();
 const user = {"profilePicture": false};
 

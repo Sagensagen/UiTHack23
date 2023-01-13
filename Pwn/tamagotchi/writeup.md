@@ -7,7 +7,7 @@
 >
 > Connect with netcat to play with your tamagotchi
 > ```command
-> $ nc motherload.td.org.uit.no 6400
+> $ nc motherload.td.org.uit.no 8009
 > ```
 >
 > The flag is located in the home directory on the server.

