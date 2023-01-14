@@ -8,7 +8,7 @@ Here is the [spell](src/spell).
 
 Connect with netcat
 ```command
-$ nc motherload.td.org.uit.no 6200
+$ nc motherload.td.org.uit.no 8005
 ```
 
 Hint 1. Can the spell be too looong?

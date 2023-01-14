@@ -6,7 +6,7 @@ Prove it to me by answering 300 questions, and I will give you a flag!
 
 You can connect to the server with netcat
 ```bash
-$ nc motherload.td.org.uit.no 8100
+$ nc motherload.td.org.uit.no 8010
 ```
 Some starting code can be found [here](src/solve.py).
 

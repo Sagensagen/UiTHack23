@@ -6,7 +6,7 @@
 >
 > You can connect to the server with netcat
 > ```bash
-> $ nc motherload.td.org.uit.no 8100
+> $ nc motherload.td.org.uit.no 8010
 > ```
 > Some starting code can be found [here](src/solve.py).
 
@@ -16,7 +16,7 @@ The starting code can be expanded to the following to get the flag
 ```python
 from pwn import *
 
-p = remote("motherload.td.org.uit.no", 8100)
+p = remote("motherload.td.org.uit.no", 8010)
 p.recvuntil(b"Ready?")
 p.sendline(b"Yup")
 p.recvline()

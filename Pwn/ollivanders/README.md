@@ -8,7 +8,7 @@ Visit Mr. Ollivander's shop and see if he has something interesting to sell you!
 
 You can connect to *Ollivanders* with
 ```bash
-$ nc motherload.td.org.uit.no 6300
+$ nc motherload.td.org.uit.no 8008
 ```
 
 Hint 1. Can you get more galleons?
