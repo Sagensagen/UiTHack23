@@ -18,5 +18,5 @@ which then can be saved as 0 and 1 respectivly, this will result in a binary wit
 3. Use an online string -> binary (byte-length 7) converter (e.g. [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Binary('Space',7)&input=MTAwMTExMDAxMTAwMTExMTEwMTAwMTExMDExMTAxMTAwMDAxMTEwMDEwMTEwMTAxMTA))
 
 ```bash
-Flag: UiTHack23{N3tw0rk.}
+Flag: UiTHack23{N3tw0rk}
 ```
