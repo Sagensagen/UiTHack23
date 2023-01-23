@@ -17,7 +17,7 @@ Add emoji!
 |Navigate 🧭|Popup Roulette :warning: | Ollivanders :dollar: | Word 1.1 💾 | You wouldn't download a car :pirate_flag: |Padding Oracle :crystal_ball: | |
 |scp+unzip\*2 🤐| Xss98 :flags:| Wizardry :zap: | Gangsta's messed up paradise :microphone: | Fresh Coffee :coffee: | Kasparov's Nightmare :chess_pawn: | |
 |Moms spaghetti 🍝|Petes ancient machine 🧭| | Guidelines :triangular_flag_on_post: | Pokemon Battle :baseball: | Lion King :lion: | |
-|Get served :shipit:|:iphone: Nokia 3310| Tamagotchi :cow: | | Pokemon Battle V2 :8ball: | Code Page 📟 | |
+|Get served :shipit:|:iphone: Nokia 3310| Tamagotchi :cow: | Aww 🐾 | Pokemon Battle V2 :8ball: | Code Page 📟 | |
 
 
 # Developer guidelines
