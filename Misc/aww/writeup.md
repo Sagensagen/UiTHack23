@@ -4,7 +4,7 @@
 >
 > Aww so cute, 7 types of cats and dogs, but I can't see the key. Can you help me?
 >
-> The flag will be the same format as this one: `UiTHack23{this_could_be_a_key}`
+> The flag will be the same format as this one: `UiTHack23{[a-zA-z0-9]}`
 >
 > Tips: Dogs are 0 and cats are 1
 
@@ -18,5 +18,5 @@ which then can be saved as 0 and 1 respectivly, this will result in a binary wit
 3. Use an online string -> binary (byte-length 7) converter (e.g. [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Binary('Space',7)&input=MTAwMTExMDAxMTAwMTExMTEwMTAwMTExMDExMTAxMTAwMDAxMTEwMDEwMTEwMTAxMTA))
 
 ```bash
-Flag: UiTHack23{N3tw0rk.}
+Flag: UiTHack23{N3tw0rk}
 ```
