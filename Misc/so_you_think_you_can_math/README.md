@@ -4,7 +4,7 @@
 Do you remember your pluses and minuses? What about your multiplications and divisions?
 Prove it to me by answering 300 questions, and I will give you a flag!
 
-You have been given a python-script as a [starting point](src/solve.py).
+You have been given a python-script as a [starting point](src/example.py).
 
 You can connect to the server with netcat
 ```bash

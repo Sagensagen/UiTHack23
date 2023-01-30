@@ -1,5 +1,5 @@
 > # Rev - Pokemon Battle V2
-> > Rev - 500 pts
+> > Rev - 500 pts <br>
 > > Required solving Pokemon Battle V1
 >
 > The feedback for the V1 of the Pokemon Battle has been reviewed, and the following changes have been made:
