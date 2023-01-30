@@ -1,5 +1,6 @@
 > # Rev - Pokemon Battle V2
 > > Rev - 500 pts
+> > Required solving Pokemon Battle V1
 >
 > The feedback for the V1 of the Pokemon Battle has been reviewed, and the following changes have been made:
 > - Gym leaders have less hp
@@ -29,7 +30,7 @@ __pyarmor__(__name__, __file__, b'PYARMOR\x00\x00\x03 ...
 
 Although pyarmor in this case probably could be broken with a tool like [PyArmor-Unpacker](https://github.com/Svenskithesource/PyArmor-Unpacker), an easier approach would be to rewrite the get_flag-file so that we can print the decrypted flag instead of getting the encrypted version that the game gives us. <br>
 
-We move the required files from the _PYZ-00.pyz_extracted/_ directory into the same directory as _main.pyc_ (pokemon.pyc, battle.pyc, pytransform.pyc), and run it.  
+We move the required files from the _PYZ-00.pyz_extracted/_ directory into the same directory as _main.pyc_ (pokemon.pyc, battle.pyc, pytransform.pyc), and run it.
 
 ```command
 $ python3 main.pyc

@@ -2,6 +2,8 @@
 > Rev- 50pts
 >
 > My mama always said, "Binaries are not great for hiding things".
+>
+> Files: [Binary](src/forrest)
 
 ## Writeup
 The task hints to the flag being hidden inside the binary.

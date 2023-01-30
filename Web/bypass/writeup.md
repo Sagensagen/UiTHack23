@@ -1,10 +1,11 @@
 > # Web - Bypass
 > > Web - 250pts
 >
-> I've hid the flag behind this super secure admin login prompt. Are you able to retrieve the flag?
-> Login as admin to view the flag.
+> I've hid the flag behind this super secure admin login prompt. Are you able to login as admin to retrieve the flag?
 >
-> motherload.td.org.uit.no:8007/
+> Website is located at `motherload.td.org.uit.no:8007`
+>
+> Files: [Source code](src/app.js)
 
 ## Writeup
 The source code running the server is vulnerable to a prototype poisoning attack at the __/flag__ endpoint.

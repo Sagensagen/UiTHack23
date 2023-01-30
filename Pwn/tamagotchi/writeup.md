@@ -1,16 +1,14 @@
 > # Pwn - Remote tamagOtchi Pet
 > > Pwn - 500pts
 >
-> You might remember the Tamagotchi from the late 90's or early 2000's. Good news, we have improved the tamagotchi by putting everyone's favourite animal on the web so you don't loose it!
+> You might remember the Tamagotchi from the late 90's and early 2000's. Good news, we have improved the tamagotchi by putting everyone's favourite pet on the web!
 >
-> Here's your [tamagotchi](src/tamagotchi)
+> The flag is located in the home directory on the server.
 >
-> Connect with netcat to play with your tamagotchi
+> Connect with netcat to access your [tamagotchi](src/tamagotchi)
 > ```command
 > $ nc motherload.td.org.uit.no 8009
 > ```
->
-> The flag is located in the home directory on the server.
 
 ## Writeup
 Looking at the challenge text we see that we can expect this to be a ROP-challenge (capitalized letters in challenge name). Another way to see this is a ROP-challenge is that we need to get a shell to view the flag, and does not have function clearly giving us the shell.
