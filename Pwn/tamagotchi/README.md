@@ -1,16 +1,14 @@
 # Pwn - Remote tamagOtchi Pet
 > Pwn - 500pts
 
-You might remember the Tamagotchi from the late 90's and early 2000's. Good news, we have improved the tamagotchi by putting everyone's favourite pet on the web so you don't risk loosing it!
+You might remember the Tamagotchi from the late 90's and early 2000's. Good news, we have improved the tamagotchi by putting everyone's favourite pet on the web!
 
-Here's your [tamagotchi](src/tamagotchi)
+The flag is located in the home directory on the server.
 
-Connect with netcat to play with your tamagotchi
+Connect with netcat to access your [tamagotchi](src/tamagotchi)
 ```command
 $ nc motherload.td.org.uit.no 8009
 ```
-
-The flag is located in the home directory on the server.
 
 Hint 1. What kind of exploit is hinted to in this text?
 

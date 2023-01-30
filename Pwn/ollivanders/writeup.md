@@ -6,7 +6,7 @@
 >
 > [Files](src/ollivanders)
 >
-> You can connect to *Ollivanders* with
+> You can connect to *Ollivanders* with netcat
 > ```bash
 > $ nc motherload.td.org.uit.no 8008
 > ```

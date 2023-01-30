@@ -6,7 +6,7 @@
 > My name is Oak! <br>
 > People call me the Pokemon Prof! <br>
 >
-> Show me your Pokemon skills and I will reward you with a flag!
+> Show me your Pokemon skills by beating all 5 gym leaders, and I will reward you with a flag!
 >
 > Here is your [game](src/pokemon).
 

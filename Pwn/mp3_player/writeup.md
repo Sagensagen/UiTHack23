@@ -1,12 +1,12 @@
 > # Pwn - Mp3 Player
-> > Pwn - 150pts
+> > Pwn - 200pts
 >
 > We found an old mp3 player laying around and decided to connect it to the internet for everyone to listen to its > good ol' hits. <br />
 > However, we might have messed up some of the instructions when setting it up...
 >
-> [Files](src)
+> Files: [Source code](src)
 >
-> You can connect to the mp3 player with
+> You can connect to the mp3 player with netcat
 > ```bash
 > $ nc motherload.td.org.uit.no 8006
 > ```

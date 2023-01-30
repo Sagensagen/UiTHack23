@@ -10,7 +10,7 @@ Show me your Pokemon skills by beating all 5 gym leaders, and I will reward you 
 
 Here is your [game](src/pokemon).
 
-Hint 1. It might be easier to not try to beat it<br>
+Hint 1. It might be easier to not try to beat the gym leaders<br>
 Hint 2. What langauge is it written in?
 
 [Writeup](writeup.md)
