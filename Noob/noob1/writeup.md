@@ -7,9 +7,9 @@
 > The flag will be the same format as this one:
 > `UiTHack23{this_could_be_a_key}`.
 >
-> To enter you will need to connect through `ssh`.  
-> The username is `noob1`.  
-> The server name is `wwww.limewire.td.org.uit.no`.  
+> To enter you will need to connect through `ssh`.
+> The username is `noob1`.
+> The server name is `wwww.limewire.td.org.uit.no`.
 > The password for youngling is `noob1`.
 >
 > Tips:
@@ -22,4 +22,4 @@
 
 Connect to the server cat/vim/nano flag.txt
 
-`UiTHack23{pull_the_lever_kronk}`
+`UiTHack23{pull_the_lever_Kronk}`
