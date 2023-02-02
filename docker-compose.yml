@@ -9,8 +9,6 @@ services:
       - CHOKIDAR_USEPOLLING=true
     build:
       context: Web/xssend_me_flag/cronjob
-    ports:
-      - "80:80"
 
   nokia_client:
     container_name: nokia_client
@@ -39,7 +37,7 @@ services:
     build:
       context: Web/xssend_me_flag/client
     ports:
-      - "8002:80"
+      - "5050:80"
 
   # Ikke rør denne porten! 5000:5000
   flask_api:
@@ -51,7 +49,7 @@ services:
     build:
       context: Web/xssend_me_flag/flask_api
     ports:
-      - "5000:5000"
+      - "5000:8003"
 
   padding_oracle:
     stdin_open: true
