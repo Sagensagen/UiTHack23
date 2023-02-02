@@ -34,7 +34,7 @@ pub extern "C" fn main(_argc: isize, _argv: *const *const u8) -> isize {
     read(0, &mut input);
 
     if input.eq(&obfsbytes!(b"DEAD-CODE-BABE-BEEF")) {
-        let flag = obfsbytes!(b"The flag is UiTHack22{sail_the_high_seas_pirate}\n");
+        let flag = obfsbytes!(b"The flag is UiTHack23{sail_the_high_seas_pirate}\n");
         write(1, &flag);
     } else {
         write(
