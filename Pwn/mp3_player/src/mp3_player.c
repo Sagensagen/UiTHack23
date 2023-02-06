@@ -2,11 +2,24 @@
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <signal.h>
 
 void ignore_me(){
   setvbuf(stdin, NULL, _IONBF, 0);
   setvbuf(stdout, NULL, _IONBF, 0);
   setvbuf(stderr, NULL, _IONBF, 0);
+}
+
+void timeout(int signal){
+  if (signal == SIGALRM){
+    printf("You timed out!\n");
+    _exit(0);
+  }
+}
+
+void ignore_me_timeout(){
+  signal(SIGALRM, timeout);
+  alarm(60);
 }
 
 void menu(){
@@ -64,8 +77,9 @@ void play_song(char *song){
 
 int main(){
   ignore_me();
-  char song[30];
+  ignore_me_timeout();
 
+  char song[30];
   menu();
   gets(song);
   play_song(song);

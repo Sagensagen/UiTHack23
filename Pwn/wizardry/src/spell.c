@@ -1,11 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <signal.h>
+#include <unistd.h>
 
 void ignore_me(){
   setvbuf(stdin, NULL, _IONBF, 0);
   setvbuf(stdout, NULL, _IONBF, 0);
   setvbuf(stderr, NULL, _IONBF, 0);
+}
+
+void timeout(int signal){
+  if (signal == SIGALRM){
+    printf("You timed out!\n");
+    _exit(0);
+  }
+}
+
+void ignore_me_timeout(){
+  signal(SIGALRM, timeout);
+  alarm(60);
 }
 
 void print_flag(){
@@ -22,8 +35,9 @@ void print_flag(){
 
 int main(){
   ignore_me();
-  char buffer[40];
+  ignore_me_timeout();
 
+  char buffer[40];
   signal(SIGSEGV, print_flag);
 
   printf("Cast a spell:\n>> ");
