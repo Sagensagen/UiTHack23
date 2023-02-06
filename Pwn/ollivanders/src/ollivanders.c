@@ -1,10 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <signal.h>
+#include <unistd.h>
 
 void ignore_me(){
   setvbuf(stdin, NULL, _IONBF, 0);
   setvbuf(stdout, NULL, _IONBF, 0);
   setvbuf(stderr, NULL, _IONBF, 0);
+}
+
+void timeout(int signal){
+  if (signal == SIGALRM){
+    printf("You timed out!\n");
+    _exit(0);
+  }
+}
+
+void ignore_me_timeout(){
+  signal(SIGALRM, timeout);
+  alarm(60);
 }
 
 void print_flag(){
@@ -64,8 +78,9 @@ int buy(int galleons){
       return galleons;
     }
     galleons -= 50;
-    puts("\nYou have purchased the flag!\n");
+    puts("\nYou have purchased the flag!");
     print_flag();
+    _exit(0);
   }
   printf("\nYou have %d galleons\n\n", galleons);
   return galleons;
@@ -73,6 +88,7 @@ int buy(int galleons){
 
 int main(){
   ignore_me();
+  ignore_me_timeout();
 
   int galleons = 20;
   int option = 0;
