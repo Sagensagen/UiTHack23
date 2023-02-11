@@ -1,5 +1,5 @@
 # Rev - You wouldn't download a car
-> Rev - 150 pts
+> Rev - 200 pts
 
 You wouldn't steal a car <br>
 You wouldn't steal a handbag <br>
