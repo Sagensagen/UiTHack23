@@ -1,4 +1,3 @@
-
 ## Writeup
 
 Call the correct endpoints to spell out the code within the set timespan,(10seconds). The context of the frontend is not equal with what the backend registers, and and cannot be trusted. 
