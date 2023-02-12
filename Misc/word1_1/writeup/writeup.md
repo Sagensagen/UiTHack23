@@ -28,12 +28,11 @@
 >
 >[Writeup](writeup.md)
 
-## Writeup
-Use git history to find the commit that might seem somewhat more suspicious, aka `removing enterprice credentials`.
-Go to the commit and find the credentials in the diff or something.
-Flag is ciphered into rot13.
+# Writeup
+Use git history to find the commit that might seem somewhat more suspicious, aka `removing enterprice credentials` than the others.
+Go to the commit and find the flag hidden as credentials, chiphered with rot13.
+By trying to grep for the flag in the repo you get the wrong flag, but it gives that the flag is ciphered rot13 as a hint. 
 
-By Grepping UIThack you get the wrong file, but it gives that the flag is ciphered rot13 as a hint
 
 ```
 UiTHack23{word1.1_actually_cost_498$_in_1990!}
