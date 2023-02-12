@@ -14,7 +14,7 @@
 ## Writeup
 Connect to a the LAN established and do a MITM attack by ARP poisoning and sniff the traffic from the few ip's
 sending data on the network.
-Multiple attenders at the network will might result in sniffing each others rather than the actual flag source lol
+Multiple attenders at the network will might result in sniffing each others rather than the actual flag, and overflow the arp table multiple times flushing other mitm attacks.
 
 ```
 UiTHack23{TheSmellOfPokemonCandy1337}
