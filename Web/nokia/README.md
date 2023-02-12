@@ -10,4 +10,4 @@ Use this excellent item to retrive the flag by sending
 
 Hint 1. Warm up your fingers! The receiver is not patient. Trackpads are too slow!
 
-> [Writeup](writeup.md)
+[Writeup](./writeup/writeup.md)

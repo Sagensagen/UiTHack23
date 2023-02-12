@@ -12,3 +12,6 @@ Tips:
 `ssh noob5@wwww.limewire.td.org.uit.no`
 
 `:8080`
+
+
+[Writeup](./writeup/writeup.md)

@@ -17,4 +17,4 @@ Tips:
 Tips:
 Read up on your unix commands 
 
-[Writeup](./writeup.md)
+[Writeup](./writeup/writeup.md)

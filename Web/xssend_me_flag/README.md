@@ -2,4 +2,4 @@
 
 Bill gates approves this design
 
-[Writeup](./writeup.md)
+[Writeup](./writeup/writeup.md)
