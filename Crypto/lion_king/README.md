@@ -5,4 +5,4 @@ Walking through the jungle with Timon and Pumbaa you stumble across some text sc
 ```
 VWlUSGFjazIze0g0a3VuNF9tNDdhdDQhfQ==
 ```
-[Writeup](writeup.md)
+[Writeup](writeup/writeup.md)

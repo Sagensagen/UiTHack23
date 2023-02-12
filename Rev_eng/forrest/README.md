@@ -8,4 +8,4 @@ Files: [Binary](src/forrest)
 Hint 1. Try looking for text strings
 
 
-[Writeup](writeup.md)
+[Writeup](writeup/writeup.md)
