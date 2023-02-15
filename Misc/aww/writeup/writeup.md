@@ -1,6 +1,6 @@
-> # Aww
+> # Misc - Aww
 > >
-> > Misc - 200 pts
+> > Misc - 350 pts
 >
 > Aww so cute, 7 types of cats and dogs, but I can't see the key. Can you help me?
 >
@@ -10,8 +10,7 @@
 
 ## Writeup
 
-The flag can be found be using an image classification model which classifies dogs and cats,
-which then can be saved as 0 and 1 respectivly, this will result in a binary with byte-length 7. The process is as follows:
+The flag can be found be using an image classification model which classifies dogs and cats, which then can be saved as 0 and 1 respectivly, this will result in a binary with byte-length 7. The process is as follows:
 
 1. Read the 50 images, resize them into `244x244` (or whatever your model needs) and save them as matricies.
 2. Find a model which is trained to identify cats and dog. (For example [this one](https://huggingface.co/ScottMueller/Cats_v_Dogs.ONNX)) Load the chosen model and deseralize it.

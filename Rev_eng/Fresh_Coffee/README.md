@@ -7,4 +7,4 @@ I wrote a [program](Keygen.class) to start the coffee machine. I was so tired th
 Tips:
 Decompile the java file and look for the flag.
 
-[Writeup](./writeup.md)
+[Writeup](./writeup/writeup.md)
