@@ -1,3 +1,7 @@
+"""
+Creates jungle-of-keys.bin file with a list of paths
+where path targets are an XOR with argument plaintext and key in rotating order. 
+"""
 import os
 from   pickle import dumps
 from   sys import argv
@@ -23,7 +27,7 @@ def E(p:str, q:str) -> str:
 	return str(B(p)^B(q))
 
 def B(s:str) -> int:
-	""" Return string as byte-value. """
+	""" Return string as byte-values in an int. """
 	return int.from_bytes(s.encode(),byteorder="big")
 
 if __name__ == "__main__":
