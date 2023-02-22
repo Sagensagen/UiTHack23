@@ -1,5 +1,5 @@
 # Web - Popup Roulette
-> Web - 50pts
+> Web - 100pts
 
 Enter on own risk! Hope you have McAfee installed.
 

@@ -6,7 +6,7 @@
 
 ## Writeup
 A031, A053, A013 and A047 have been marked so that the "door-drawings" match the given png-images. <br>
-Puts them in the correct order inside the flag-format to get the flag.
+Put them in the correct order inside the flag-format to get the flag.
 
 ```
 UiTHack23{A031A053A013A047}

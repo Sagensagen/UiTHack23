@@ -7,3 +7,5 @@ Put them together inside UiTHack23{<flag here>} to form the flag!
 The images are found in this folder.
 
 Hint. All the patterns start with the same letter
+
+[Writeup](writeup/writeup.md)

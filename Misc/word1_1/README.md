@@ -1,5 +1,5 @@
-# Pwn - Microsoft Word 1.1!
-> Pwn - 150pts
+# Misc - Microsoft Word 1.1!
+> Misc - 200pts
 ## You can now get the new Microsoft Word 1.1! It has all the features you need, and more for only 498$! <br />
 
 #### In the dark ages of computer word processing, what you wrote (and saw on the screen, if you had one) was cryptic formatting commands embedded within the text, like this:
@@ -24,6 +24,6 @@ I just wanted to drop you a note to thank you… <br>
 
 
 Try the free 23-day trial of our free-version!<br>
-[Download](Download_link)
+[Download](./src.zip)
 
 [Writeup](writeup.md)

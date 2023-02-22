@@ -1,5 +1,4 @@
 > # Web - Petes ancient machine
->
 > > Web - 100?pts
 >
 > Pete has an ancient machine stored in his parents basement which both his parents have neglected over time.
@@ -8,16 +7,11 @@
 > The flag will be the same format as this one:
 > `UiTHack23{this_could_be_a_key}`.
 >
-> URL http://motherload.td.org.uit.no:8012/
+> URL http://motherload.td.org.uit.no:8012/?digit=<some_digit>
 > Make GET request
-> Tips:
-> `curl http://motherload.td.org.uit.no:8012/{some_digit}
->
-> Tips:
-> Read up on terminal for loops
+
 
 ## Writeup
-
 Create a for loop and make a curl get request chancing the some_digit for each iteration.
 
-> `UiTHack23{that-was-really-fast-god-damn}`
+`UiTHack23{that-was-really-fast-god-damn}`
