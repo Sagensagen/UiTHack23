@@ -11,13 +11,13 @@ Repository for the yearly CTF challenge by UiT students
 ## Challenges
 
 Add emoji!
-| Noob | Web | Pwn | Misc | Rev_Eng | Crypto| IRL |
+| Noob | Web | Pwn | Misc | Rev_Eng | Crypto | IRL |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-|cat flag 🐈‍⬛ | Bypass :passport_control: |Mp3 Player :notes: | So you think you can math :triangular_ruler: | Forrest :deciduous_tree: | Hotel Caesar :hotel: | ARP poisoning :test_tube: |
-|Navigate 🧭|Popup Roulette :warning: | Ollivanders :dollar: | Word 1.1 💾 | You wouldn't download a car :pirate_flag: |Padding Oracle :crystal_ball: | |
-|scp+unzip\*2 🤐| Xss98 :flags:| Wizardry :zap: | Gangsta's messed up paradise :microphone: | Fresh Coffee :coffee: | Kasparov's Nightmare :chess_pawn: | |
-|Moms spaghetti 🍝|Petes ancient machine 🧭| | Guidelines :triangular_flag_on_post: | Pokemon Battle :baseball: | Lion King :lion: | |
-|Get served :shipit:|:iphone: Nokia 3310| Tamagotchi :cow: | Aww 🐾 | Pokemon Battle V2 :8ball: | Code Page 📟 | |
+|cat flag 🐈‍⬛ | Petes ancient machine 🧭 | Wizardry :zap: | Guidelines :triangular_flag_on_post: | Forrest :deciduous_tree: | Hotel Caesar :hotel: | Forgot stego, here you go! :door: |
+|Navigate 🧭| Popup Roulette :warning: | Ollivanders :dollar: | So you think you can math :triangular_ruler: | Fresh Coffee :coffee: | Lion King :lion: | ARP poisoning :test_tube: |
+|scp+unzip\*2 🤐| Nokia 3310 :iphone: | Mp3 Player :notes: | Gangsta's messed up paradise :microphone: | You wouldn't download a car :pirate_flag: | Code Page 📟 | |
+|Moms spaghetti 🍝| Bypass :passport_control: | Tamagotchi :cow: | Word 1.1 💾 | Pokemon Battle :baseball: | Kasparov's Nightmare :chess_pawn: | |
+|Get served :shipit:| Flags 24/7 :flags: |  | Aww 🐾 | Pokemon Battle V2 :8ball: | Padding Oracle :crystal_ball: | |
 
 
 # Developer guidelines
