@@ -73,6 +73,17 @@ services:
     ports:
       - "8005:6200"
 
+  so_you_think_you_can_math:
+    stdin_open: true
+    container_name: so_you_think_you_can_math
+    image: so_you_think_you_can_math
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: Misc/so_you_think_you_can_math/src
+    ports:
+      - "8010:8100"
+
   mp3_player:
     stdin_open: true
     container_name: mp3_player
