@@ -14,4 +14,4 @@ Hint 1. What kind of exploit is hinted to in this text?
 
 Hint 2. You will need to find the libc version used by the server.
 
-[Writeup](writeup.md)
+[Writeup](writeup/writeup.md)

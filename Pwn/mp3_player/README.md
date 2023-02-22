@@ -15,4 +15,4 @@ Hint 1. Maybe there is a way to call the function printing the flag
 
 Hint 2. Ever heard of a buffer overflow?
 
-[Writeup](writeup.md)
+[Writeup](writeup/writeup.md)

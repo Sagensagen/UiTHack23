@@ -13,4 +13,4 @@ Here is your [game](src/pokemon).
 Hint 1. It might be easier to not try to beat the gym leaders<br>
 Hint 2. What langauge is it written in?
 
-[Writeup](writeup.md)
+[Writeup](writeup/writeup.md)

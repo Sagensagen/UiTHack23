@@ -11,4 +11,4 @@ Hint 1. You won't figure out the login credentials or the secret code
 
 Hint 2. You will need to edit the post-request
 
-[Writeup](writeup.md)
+[Writeup](writeup/writeup.md)

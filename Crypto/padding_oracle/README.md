@@ -13,3 +13,5 @@ We got this prediction, but it doesn't make much sense: ```59f012ccb45de7ee596b8
 
 Tip1: Put bytes
 Tip2: I've seen this '=' before...
+
+[Writeup](writeup/writeup.md)

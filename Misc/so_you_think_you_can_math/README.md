@@ -11,4 +11,4 @@ You can connect to the server with netcat
 $ nc motherload.td.org.uit.no 8010
 ```
 
-[Writeup](writeup.md)
+[Writeup](writeup/writeup.md)

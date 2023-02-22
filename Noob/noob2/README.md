@@ -18,3 +18,5 @@ The password for noob2 is the last flag retrieved from noob1.
 
 Tips:
 `ssh noob2@wwww.limewire.td.org.uit.no`
+
+[Writeup](./writeup/writeup.md)

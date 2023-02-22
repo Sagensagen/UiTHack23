@@ -9,3 +9,5 @@ Password is noob3's flag
 
 Tips:
 `ssh noob4@wwww.limewire.td.org.uit.no`
+
+[Writeup](./writeup/writeup.md)

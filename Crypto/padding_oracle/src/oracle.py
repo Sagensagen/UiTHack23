@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import logging
 from Crypto.Cipher import AES
-from Crypto import Random
 from flask import Flask, request, Response
 from waitress import serve
 
@@ -11,31 +10,31 @@ _iv = b'\x8a\xeb\xfa\xf0%\xe8n\xa0\xa2\xb0|\xb5\x15\x8b\xa3\x9a'
 empty_block = b'\x00' * BLOCK_SIZE
 
 
-def padding(text):
+def padding(text:str) -> bytes:
     b = BLOCK_SIZE - (len(text) % BLOCK_SIZE)
     return text + chr(b)*b  # PKCS7 padding
 
 
-def unpadding(data):
+def unpadding(data:bytes) -> bytes:
     return data[:-data[-1]]
 
 
 # AES CBC Encryption
-def encryption(text):
+def encryption(text:str)-> str:
     encryptor = AES.new(_key, AES.MODE_CBC, IV=_iv)
     padded_text = padding(text)
     # We're putting in an empty block to make decryption easier(first block will be garbage, we don't provide IV)
     return encryptor.encrypt(empty_block+padded_text.encode("utf-8"))
 
 
-def decrypt(data):
+def decrypt(data:bytes) ->bytes:
     # previous block is used to decrypt the current block
     iv = data[:BLOCK_SIZE]
     cipher = AES.new(_key, AES.MODE_CBC, iv)
     return cipher.decrypt(data[BLOCK_SIZE:])
 
 
-def valid_padding(data):
+def valid_padding(data:bytes) -> bool:
     valid = True
     decrypted = decrypt(data)
     last_byte = decrypted[-1]

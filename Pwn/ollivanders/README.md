@@ -13,4 +13,4 @@ $ nc motherload.td.org.uit.no 8008
 
 Hint 1. Can you somehow get more galleons?
 
-[Writeup](writeup.md)
+[Writeup](writeup/writeup.md)

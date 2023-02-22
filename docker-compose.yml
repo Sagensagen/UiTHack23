@@ -9,8 +9,6 @@ services:
       - CHOKIDAR_USEPOLLING=true
     build:
       context: Web/xssend_me_flag/cronjob
-    ports:
-      - "80:80"
 
   nokia_client:
     container_name: nokia_client
@@ -39,7 +37,7 @@ services:
     build:
       context: Web/xssend_me_flag/client
     ports:
-      - "8002:80"
+      - "5050:80"
 
   # Ikke rør denne porten! 5000:5000
   flask_api:
@@ -51,7 +49,7 @@ services:
     build:
       context: Web/xssend_me_flag/flask_api
     ports:
-      - "5000:5000"
+      - "5000:8003"
 
   padding_oracle:
     stdin_open: true
@@ -75,6 +73,17 @@ services:
     ports:
       - "8005:6200"
 
+  so_you_think_you_can_math:
+    stdin_open: true
+    container_name: so_you_think_you_can_math
+    image: so_you_think_you_can_math
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: Misc/so_you_think_you_can_math/src
+    ports:
+      - "8010:8100"
+
   mp3_player:
     stdin_open: true
     container_name: mp3_player
@@ -95,7 +104,7 @@ services:
     build:
       context: Web/bypass/src
     ports:
-      - "8007:5100"
+      - "9998:5100"
 
   ollivanders:
     stdin_open: true

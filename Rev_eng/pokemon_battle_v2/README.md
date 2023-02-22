@@ -11,4 +11,4 @@ Here is your patched version of the [game](src/pokemon_v2).
 
 Hint 1. Even the strongest armor has its weaknesses
 
-[Writeup](writeup.md)
+[Writeup](writeup/writeup.md)

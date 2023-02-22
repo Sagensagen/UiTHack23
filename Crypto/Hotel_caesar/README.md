@@ -10,4 +10,4 @@ RfQExzh23{x_eljb_clo_rp_x_eljb_clo_vlr}
 
 Hint 1. The text seems similar to the flag format
 
-[Writeup](writeup.md)
+[Writeup](writeup/writeup.md)

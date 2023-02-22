@@ -1,6 +1,6 @@
 #!/bin/bash
 # Created by Ben Okopnik on Wed Jul 16 18:04:33 EDT 2008
-
+# Tweaked by Finn Olav Sagen on Feb 11 2023
 ########    User settings     ############
 MAXDIRS=1
 MAXDEPTH=2
