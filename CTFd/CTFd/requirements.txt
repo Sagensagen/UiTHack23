@@ -10,6 +10,8 @@ alembic==1.4.3
     #   flask-migrate
 aniso8601==8.0.0
     # via flask-restx
+async-timeout==4.0.2
+    # via redis
 attrs==20.3.0
     # via jsonschema
 bcrypt==3.2.2
@@ -124,7 +126,7 @@ python-geoacumen-city==2022.5.15
     # via -r requirements.in
 pytz==2020.4
     # via flask-restx
-redis==3.5.2
+redis==4.4.4
     # via -r requirements.in
 requests==2.27.1
     # via -r requirements.in
